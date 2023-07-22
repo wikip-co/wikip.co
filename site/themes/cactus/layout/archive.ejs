@@ -1,0 +1,15 @@
+<div id="archive">
+  <%= page.category %>
+  <%= page.tag %>
+  <ul class="post-list">
+    <% var year = 0 %>
+    <% var change = false %>
+    <% var field_sort = theme.archive.sort_updated ? 'title' : 'name' %>
+    <% page.posts.sort(field_sort, 'ascend').each(function(post) { %>
+      <li class="post-item">
+        <span><%- partial('_partial/post/title', { post: post, index: true, class_name: '' }) %></span>
+      </li>
+    <% }); %>
+  </ul>
+  <%- partial('_partial/pagination') %>
+</div>

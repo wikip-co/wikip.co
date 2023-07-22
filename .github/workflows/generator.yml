@@ -1,0 +1,63 @@
+name: Generate Site
+
+on:
+  workflow_dispatch:
+  push:
+    branches:
+      - master
+    paths:
+      - 'site/**'
+      
+permissions: write-all
+
+env:
+  GITHUB_TOKEN: ${{ secrets.GIT_ACCESS_TOKEN }}
+  
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v3
+      with:
+        token: ${{ env.GITHUB_TOKEN }}
+        submodules: 'recursive'
+    - uses: actions/setup-node@v3
+      with:
+        node-version: 'latest'
+    - name: Set up Python
+      uses: actions/setup-python@v2
+      with:
+        python-version: 3.9
+#     - name: Install dependencies run script
+#       run: |
+#         pip install --upgrade pip
+#         pip install pipenv
+#         cd site/source/_data
+#         pipenv install
+#         pipenv run python get_projects.py
+#         cd ../..
+    - name: Build site
+      env:
+        NODE_OPTIONS: --max-old-space-size=5168
+      run: |
+        git config --global user.email "me@anthonyrussano.com"
+        git config --global user.name "Anthony Russano"
+        git submodule init
+        git submodule update
+        cd public
+        git switch main
+        git pull
+        rm -rf *
+        cd ..
+        cd site
+        npm install
+        node_modules/hexo/bin/hexo gen -c 1
+        cd ..
+        cd public
+        git add .
+        git commit -m "workflow publish"
+        git push
+        cd ..
+        git add .
+        git commit -m "workflow deploy"
+        git push

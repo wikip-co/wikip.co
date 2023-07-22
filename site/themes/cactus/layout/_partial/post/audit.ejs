@@ -1,0 +1,15 @@
+<% let file_path=`${theme.history.branch}/${theme.history.path}/source/${page.source}`;%>
+    <div>
+        <a
+            href="<%= theme.history.server %><%= theme.history.user %>/<%= theme.history.repo %><%= `/new/` %><%= theme.history.branch %>/<%= theme.history.path %><%= `/source/_posts` %>">
+            New</a> -
+        <a
+            href='<%= theme.history.server %><%= theme.history.user %>/<%= theme.history.repo %><%= `/edit/${file_path}` %>'>
+            Edit</a> -
+        <a
+            href='<%= theme.history.server %><%= theme.history.user %>/<%= theme.history.repo %><%= `/commits/${file_path}` %>'>
+            History</a> -
+        <a
+            href='<%= theme.history.server %><%= theme.history.user %>/<%= theme.history.repo %><%= `/raw/${file_path}` %>'>
+            Source</a>
+    </div>
