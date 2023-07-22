@@ -32,7 +32,7 @@ jobs:
       env:
         NODE_OPTIONS: --max-old-space-size=5168
       run: |
-        git config --global user.email "me@wikip.co"
+        git config --global user.email "me@anthonyrussano.com"
         git config --global user.name "Anthony Russano"
         git submodule init
         git submodule update
