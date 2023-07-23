@@ -6,9 +6,9 @@
             </div>
             <% if (theme.history_control.enable) { 
                 let repertory_address = `${theme.history_control.server_link}/${theme.history_control.user}/${theme.history_control.repertory}`;
-                let file_path = `${theme.history_control.branch}/source/${post.source}`;%>
+                let file_path = `${theme.history_control.branch}/site/source/${post.source}`;%>
                 <div class="article-meta-button">
-                    <a href="<%= theme.history_control.server_link %><%= theme.history_control.user %>/<%= site.data.resources.repo %><%= `/edit/main/source/_posts/template` %>"> New </a>
+                    <a href="<%= theme.history_control.server_link %><%= theme.history_control.user %>/<%= site.data.resources.repo %><%= `/edit/main/site/source/_posts/template` %>"> New </a>
                 </div>
                 <div class="article-meta-button">
                     <a href='<%= theme.history_control.server_link %><%= theme.history_control.user %>/<%= site.data.resources.repo %><%= `/edit/${file_path}` %>'> Edit </a>
