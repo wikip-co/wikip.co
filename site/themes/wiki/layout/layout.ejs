@@ -7,7 +7,9 @@
                     <h3 class="widget-title">   
                         &nbsp;
                         <span><i onclick="myFunction3()" class="fa fa-rss"></i></span>
-                        <span style="cursor: pointer;" onclick="myFunction1()">Index</span> <span style="cursor: pointer;" onclick="myFunction2()">Keywords</span> <a style="display: none;" id='allExpand' href="#">
+                        <span style="cursor: pointer;" onclick="myFunction1()">Index</span> 
+                        <span style="cursor: pointer;" onclick="myFunction2()">Keywords</span> 
+                        <a style="display: none;" id='allExpand' href="#">
                             <i class="fa fa-angle-double-<%- theme.customize.category_perExpand ? 'up' : 'down' %> fa-2x"></i>
                         </a>    
                     </h3>
@@ -21,7 +23,11 @@
                     <div id="local-search-result"></div>
                     <div id='tags' style="display: none; text-align:justify;"><%- tagcloud(site.tags, {min_font: 22, max_font: 42}) %></div>
                     <!-- placeholder for recent posts section --> 
-                    <div style="display: none;" id='categories'>
+                    <% if (page.path != 'index.html') { %>
+                        <div style="display: none;" id='categories'>
+                    <% } else { %>
+                        <div style="display: block;" id='categories'>
+                    <% } %>
                         <% 
                             function listCategories(categories, posts) {
                                 function layArticles(posts) {
