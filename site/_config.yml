@@ -80,3 +80,20 @@ markdown:
     permalinkSymbol: '¶'
     case: 0
     separator: '-'
+feed:
+  enable: true
+  type:
+    - atom
+    - rss2
+  path:
+    - atom.xml
+    - rss2.xml
+  limit: 40
+  hub:
+  content:
+  content_limit: 440
+  content_limit_delim: ' '
+  order_by: -date
+  icon: https://res.cloudinary.com/wikip/image/upload/dark_folder.png
+  autodiscovery: true
+  template:
