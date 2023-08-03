@@ -4,12 +4,19 @@ tags:
 - Antioxidant
 - Adaptogen
 - Exercise
+- Hypoxia
 - Neuroprotective
 - Myelination
 - Muscle Health
 - Brain Health
 - Brain Injury
 - Circulation
+- Stroke
+- Middle Cerebral Artery Occlusion
+- MCAO
+- Cerebral Ischemia–Reperfusion Injury
+- CIRI
+- Ischemia
 ---
 **Rhodiola Rosea** (golden root, rose root, roseroot, Aaron's rod, Arctic root, king's crown, lignum rhodium, orpin rose) is a perennial flowering plant in the family Crassulaceae. It grows naturally in wild Arctic regions of Europe (including Britain), Asia, and North America, and can be propagated as a groundcover.
 
@@ -20,6 +27,10 @@ Rhodioloside is one of the main active components of Rhodiola rosea.[^1]
 Salidroside (SLDS) is a phenylpropanoid glycoside extracted from the root of Rhodiola rosea L and is one of the main active ingredients of this plant.[^2]
 
 ## Healing Properties
+
+### Antioxidant
+
+- Salidroside shows significant antioxidant stress and anti-inflammatory effects.[^4]
 
 ### Anti-Hypoxia
 
@@ -69,6 +80,44 @@ Rhodioloside was shown to reduce neurological deficit scores and increase neuron
 
 ## Disease / Symptom Treatment
 
+### Stroke / Cerebral Ischemia–Reperfusion Injury (CIRI)
+
+- Salidroside could be considered as a potential treatment for stroke.[^4]
+- These findings underline the potential therapeutic value of salidroside in treating ischemic stroke, targeting multiple pathways to reduce damage and promote recovery.[^4]
+- It can reduce cerebral infarct volume, inhibit inflammatory cytokine secretion, improve neurological function, and exert neuroprotective effects.[^4]
+
+- Salidroside ameliorates neurological deficits and reduces infarct size in rat models of middle cerebral artery occlusion (MCAO)-induced cerebral ischemia–reperfusion injury (CIRI).[^4]
+  - It targets STAT-3 and reverses oxidative stress in MCAO rats.[^4]
+- Intraperitoneal injections of salidroside decrease inflammation and reduce expression of inflammatory factors such as IL-6, IL-1β, TNF-α, CD14, CD44, and iNOS.[^4]
+  - Intraperitoneal (IP) injections are a method of administering therapeutic agents directly into the peritoneal cavity, the space within the abdomen that contains the intestines, stomach, and liver.
+- It decreases cerebral infarct volume and neurological deficit scores, and involves regulation of the PI3K/PKB and Nrf2/NF-κB signaling pathways.[^4]
+  - Infarct size refers to the volume or area of tissue that has died as a result of ischemia or lack of blood flow. In the context of a stroke, it specifically refers to the portion of the brain that has been damaged or killed due to a lack of oxygen and nutrients, which are normally delivered by blood.
+  - The size of the infarct can have significant implications for the patient's prognosis and recovery. A larger infarct size often means more extensive brain damage, which may translate to more severe neurological deficits or impairments. Conversely, a smaller infarct size might result in less severe symptoms and a better potential for recovery.
+  - Measuring the infarct size can be an important part of evaluating the severity of a stroke and can guide treatment decisions, rehabilitation plans, and the assessment of potential outcomes for the patient. It's also an important parameter in research for evaluating the effectiveness of different therapies or interventions for stroke.
+- In a cellular model, it inhibits RIP140-mediated inflammation and apoptosis.[^4]
+- Salidroside increases levels of CD46 and CD59 and decreases levels of VCAM-1, ICAM-1, P-selectin, and E-selectin in human endothelial cells.[^4]
+- Enhances microglial phagocytosis, suppresses cytokine release, and promotes M2 microglial polarization, enhancing brain tissue repair.[^4]
+- Inhibits the NLRP3 inflammasome and decreases levels of proteins related to the TRL4 signaling pathway, alleviating CIRI.[^4]
+
+#### Effect of Salidroside on Apoptosis
+
+- Reduces the apoptosis rate of neurons and increases the Bcl-2/Bax ratio, reducing the p53 protein level.[^4]
+- Increases cell viability, ameliorates neuronal cell injury, and decreases the cell apoptosis rate.[^4]
+- Regulates the BDNF-mediated PI3K/Akt apoptotic pathway and elevates SIRT1 and phosphorylated FOXO3α protein levels, showing neuroprotective effects.[^4]
+
+#### Effect of Salidroside on Mitochondrial Quality Control (MQC)
+
+- Alleviates the imbalance between mitochondrial fission and fusion, enhances mitophagy, promotes mitochondrial biogenesis, and inhibits AMPK activity.[^4]
+- Maintains calcium homeostasis and reduces mitochondrial permeability and damage.[^4]
+- Preserves mitochondrial morphology and function, playing a role in reducing neuronal death.[^4]
+
+#### Effect of Salidroside on Synaptic Plasticity
+
+- Improves long-term recovery, inhibits reactive astrocyte proliferation, and ameliorates glial scar formation.[^4]
+- Promotes dendritic and synaptic plasticity, involving the FGF2-mediated cAMP/PKA/CREB pathway.[^4]
+- Ameliorates neurobehavioral impairment and may indicate improved DAergic system function.[^4]
+
+
 [^1]: **Title:** [Effects of rhodioloside on the neurological functions of rats with total cerebral ischemia/reperfusion and cone neuron injury in the hippocampal CA1 region](https://doi.org/10.7717/peerj.10056)<br>
 **Publication:** [PeerJ: Life & Environment](https://peerj.com/)<br>
 **Date:** November 2020<br>
@@ -93,7 +142,14 @@ Rhodioloside was shown to reduce neurological deficit scores and increase neuron
 **Institutions:** University of Marılia (UNIMAR), Marılia–Brazil, Brazil; Faculty of Food Technology of Marılia, Marı´lia, Sao Paulo–Brazil<br>
 **Copy:** [archive](https://ipfs.io/ipfs/QmSzT7PTBNyKeKrVU8cTRnEudmS2maymZFwHJkDphmcx8G), [archive-mirror](https://cloudflare-ipfs.com/ipfs/QmSzT7PTBNyKeKrVU8cTRnEudmS2maymZFwHJkDphmcx8G)
 
-[^4]: **Title:** []()<br>
+[^4]: **Title:** [Brain Network Homeostasis and Plasticity of Salidroside for Achieving Neuroprotection and Treating Psychiatric Sequelae Stemming from Stress](https://doi.org/10.21203/rs.3.rs-2408379/v1)<br>
+**Publication:** Research Square (Preprint)<br>
+**Date:** March 2023<br>
+**Author(s):** Ting Zhu1, Hui Liu2, Shiman Gao3, Shuai Chen4, Ning Jiang5, Weijie Xie6<br>
+**Institutions:** 1 Qingdao University, 2 Guiyang Medical University: Guizhou Medical University, 3 Qingdao University Affiliated Qingdao Women and Childrens Hospital: Qingdao Women and Children's Hospital, 4 Wuhan University School of Public Health, 5 Chinese Academy of Medical Sciences & Peking Union Medical College Institute of Medicinal Plant Development, 6 Shanghai Jiao Tong University School of Medicine Affiliated Shanghai Mental Health Center: Shanghai Mental Health Center<br>
+**Copy:** [archive](https://ipfs.io/ipfs/bafybeico5ihirbunk5orvoqcaxec4w7lmahjcpjs7tpev6u6hdwh3oebim), [archive-mirror](https://cloudflare-ipfs.com/ipfs/bafybeico5ihirbunk5orvoqcaxec4w7lmahjcpjs7tpev6u6hdwh3oebim)
+
+[^5]: **Title:** []()<br>
 **Publication:** []()<br>
 **Date:** <br>
 **Study Type:** Animal Study, Commentary, Human Study: In Vitro - In Vivo - In Silico, Human: Case Report, Meta Analysis, Review<br>
