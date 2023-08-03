@@ -71,5 +71,65 @@ The right amount of market risk is sufficient to meet the goal without introduci
 
 Investors should approach risk based on their individual circumstances and goals. Understanding and consciously choosing the level of risk in an investment portfolio should be emphasized.[^2]
 
+## Asset Allocation
+
+Understanding the importance of asset allocation in investment and the main asset classes.
+
+Asset allocation is the exercise of determining how much of each asset class you should hold in your portfolio. The main asset classes include stocks, bonds, real estate investment trusts, and alternatives.[^3]
+
+Total stock market exposure is a given in asset allocation. The mix between stocks and bonds is subjective, and exposure to factors is important but often overlooked.
+
+### Capital Asset Pricing Model (CAPM)
+
+Introduction to the Capital Asset Pricing Model and its role in quantifying risk and returns.
+
+The CAPM quantifies the relationship between risk and expected returns. It sees risk and return as being determined by a portfolio's exposure to market beta.
+
+### Global Exposure
+
+Importance of diversifying across Canadian, US, International Developed, and Emerging Markets stocks.
+
+Combining Canadian, US, International Developed, and Emerging Markets stocks into a portfolio improves the risk and return characteristics. The optimal mix is unknown, making the geographic asset allocation choice mostly arbitrary.[^3]
+
+### Canadian Stocks Bias
+
+Tax Treatment is the reason for a bias toward Canadian stocks in many portfolios.
+
+Many portfolios have a heavy bias toward Canadian stocks due to tax treatment.
+
+### Bonds
+
+Bonds are less risky than stocks and have lower expected returns. Adding Canadian bonds to the portfolio can reduce risk without significantly reducing returns.[^3]
+
+### Real Estate Investment Trusts (REITs)
+
+The role of bonds and real estate investment trusts in reducing risk and potentially increasing returns.
+
+Adding a small allocation to REITs can increase historical annualized return while lowering standard deviation.[^3]
+
+### Avoiding Alternatives
+
+Reasons for avoiding certain alternative investments.
+
+Avoid alternative investments like hedge funds, managed futures, preferred shares, and high yield bonds due to unfavorable characteristics.[^3]
+
+### Fama-French Three-Factor Model
+
+
+This model relates expected returns to exposure to the market, exposure to small stocks, and exposure to value stocks. It explains about 90% of the difference in returns between diversified portfolios.[^3]
+
+### Factor Exposure
+
+The significance of factor exposure in portfolio construction, including the Fama-French Three-Factor Model.
+
+Adding exposure to factors like market beta, size, value, and profitability can be beneficial. However, obtaining factor exposure can be challenging.[^3]
+
+### REITs Revisited
+
+Recent research shows that the return of REITs is explained by market beta, size, and value factors, so a portfolio with exposure to these factors may not need an allocation to REITs.
+
+
+
 [^1]: [Why You Should Ignore Market Experts | Common Sense Investing](https://www.youtube.com/watch?v=FTJtmaMjWWg)
 [^2]: [How Much Risk Should you take?](https://www.youtube.com/watch?v=t0EYr8Aex1I)
+[^3]: [Asset Allocation](https://www.youtube.com/watch?v=7gkQHSW3hkE)
