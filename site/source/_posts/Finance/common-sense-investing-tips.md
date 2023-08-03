@@ -128,8 +128,76 @@ Adding exposure to factors like market beta, size, value, and profitability can 
 
 Recent research shows that the return of REITs is explained by market beta, size, and value factors, so a portfolio with exposure to these factors may not need an allocation to REITs.
 
+## How to Evaluate Your Financial Decisions
+
+Investment decisions cannot be evaluated based on their outcomes. It emphasizes the difference between a good decision and a good outcome, especially in the context of uncertainty.[^4]
+
+The importance of making investment decisions based on specific risks and goals, and judging decisions on the quality of the process rather than the outcome.
+
+### Uncertainty in Investments
+
+Uncertainty is an inherent part of any investment, and what can be controlled is the quality of the investment decisions.[^4]
+
+### Evaluating Decisions
+
+Understanding the risk, the reason for taking it, and the expected outcome is crucial.[^4]
+
+#### Decision Evaluation Process
+
+Evaluating investment decisions at the time they are made, understanding the risks, reasons, and expected outcomes.
+
+The importance of evaluating a decision at the time it is made, rather than when the outcome is known, is stressed.[^4]
+
+#### Investment Decisions vs. Outcomes
+
+Understanding that a good decision may lead to a bad outcome and vice versa, especially in the context of uncertainty.
+
+### Market Risk Premium
+
+The video explains the concept of the market risk premium and how it has been a reliable aspect of investing historically.[^4]
+
+### Short-Term Evaluation Challenges
+
+The challenges of evaluating investment decisions in the short term are discussed, including the fact that stocks can trail bills over 10-year periods.[^4]
+
+Challenges in Short-Term Evaluation: Acknowledging the difficulties in evaluating investment decisions in the short term.
+
+### Luck and Outcomes
+
+The role of luck in investment outcomes is explored, with examples of how different retirees can have vastly different outcomes based on market timing.[^4]
+
+#### Role of Luck
+
+Examining how luck can influence investment outcomes and the importance of persistent risk premiums.
+
+### Risk Premiums and Value Stocks
+
+The reliability of long-term risk premiums is discussed, along with the example of U.S. value stocks and their performance over the past decade.[^4]
+
+Market Risk Premium: Recognizing the historical reliability of the market risk premium.
+
+#### Value Stocks vs. Growth Stocks
+
+U.S. value stocks beat growth stocks by 3.3% per year from 1928 through 2018. In Canada, value beat growth by 2.59% per year from 1977 through 2018, and in international developed markets, value beat growth by 5.01% from 1975 through 2018.[^4]
+
+#### Individual Stocks
+
+The challenges of owning individual stocks are highlighted, emphasizing that picking individual stocks is generally a losing bet.[^4]
+
+### Active Funds
+
+The performance of active funds is examined, with data showing that top-performing funds often do not remain in the top quartile over time.[^4]
+
+### Diversification
+
+The importance of diversification across geographic regions and risk factors is emphasized. Diversification is shown to reduce the impact of uncertainty and increase the chances of achieving expected outcomes.[^4]
+
+### Bayesian Thinking
+
+The concept of Bayesian thinking is introduced, explaining how it can be applied to investment decisions by weighing new information against prior assessments.[^4]
 
 
 [^1]: [Why You Should Ignore Market Experts | Common Sense Investing](https://www.youtube.com/watch?v=FTJtmaMjWWg)
 [^2]: [How Much Risk Should you take?](https://www.youtube.com/watch?v=t0EYr8Aex1I)
 [^3]: [Asset Allocation](https://www.youtube.com/watch?v=7gkQHSW3hkE)
+[^4]: [How to Evaluate your Financial Decisions](https://www.youtube.com/watch?v=I8gH5bR3clg)
