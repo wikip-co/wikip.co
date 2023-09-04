@@ -79,6 +79,6 @@ Customized corrective helmet or molding cup for a baby who has a flat spot on hi
 [^1]: **Title:** [Sternocleidomastoid Tumor of Infancy](https://www.chop.edu/conditions-diseases/sternocleidomastoid-tumor-infancy)<br>
 **Publication:** [DIVISION OF OTOLARYNGOLOGY (EAR, NOSE AND THROAT): Conditions Diseases](https://www.chop.edu/conditions-diseases)
 
-[^1]: **Title:** []()<br>
+[^2]: **Title:** []()<br>
 **Publication:** []()<br>
 **Archive:** [archive]()
