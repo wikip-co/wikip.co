@@ -207,6 +207,8 @@ Antiatherogenic: >
   Antiatherogenic refers to preventing or inhibiting atherogenesis (hardening/narrowing of the arteries).
 Anti-Atherogenic: >
   Antiatherogenic refers to preventing or inhibiting atherogenesis (hardening/narrowing of the arteries).
+Benign Neoplasms: >
+  Non-cancerous tumors that grow locally and do not spread to other parts of the body; usually not life-threatening and often removable.
 Berries: >
   The common usage of the term berry may refer to many fruits such as grapes, raspberries, strawberries, mulberries, and blackberries.
 Bioenhancer: >
@@ -310,6 +312,10 @@ Configuration management: &configmanagement >
   If something goes wrong, SCM can determine what was changed and who changed it.
   If a configuration is working well, SCM can determine how to replicate it across many hosts.
 Configuration Management: *configmanagement
+Connective and Soft Tissue Neoplasms: >
+  Connective Tissue Neoplasms are tumors in tissues like ligaments, tendons, and cartilage.
+  Soft Tissue Neoplasms are tumors in muscles, fat, and fibrous tissues; which may include lipomas and sarcomas.
+  These can be benign or malignant.
 Constipation: >
   Constipation refers to infrequent bowel movements or difficult passage of stools.
 Convolution Neural Network: >
@@ -329,6 +335,10 @@ Demography: >
   Demographic analysis can cover whole societies or groups defined by criteria such as education, nationality, religion, and ethnicity.
 Depression: >
   Depression refers to persistent feeling of sadness.
+Dermal and Subcutaneous Growths: >
+  Dermal Growths are in the skin's second layer; often visible such as moles and warts.
+  Subcutaneous Growths are deeper lumps under the skin, in the fatty layer; which may include fatty tumors and cysts.
+  Both dermal and subcutaneous growths can be benign (non-cancerous) or malignant (cancerous).
 DevOps: >
   DevOps is a set of practices that combines software development (Dev) and IT operations (Ops).
 Diabetes: >
@@ -515,6 +525,8 @@ Immunostimulant: >
   Immunostimulant (or immunostimulator) refers to an ability to stimulate the immune system by inducing activation or increasing activity of any of its components.
 Immunotherapy: >
   Immunotherapy is the treatment of disease by activating or suppressing the immune system. Immunotherapies designed to elicit or amplify an immune response are classified as activation immunotherapies, while immunotherapies that reduce or suppress are classified as suppression immunotherapies.
+Infant: >
+  Infant is a formal synonym for the common term baby. An infant typically refers to a a baby up to 12 months old.
 Infection: &Infection > 
   Infection is the invasion of an organism's body tissues by disease-causing agents, including viruses, prions, bacteria, parasites, ticks, mites, fleas, lice, fungi, and other macroparasites such as tapeworms.
 Infections: *Infection
@@ -718,6 +730,8 @@ Skin Inflammation: >
   Skin Inflammation (Inflammatory skin disease) can be classified as acute or chronic.
   Acute inflammation results from such things as exposure to UV radiation (UVR), allergens, or chemicals.
   If inflammation is long lasting it can cause significant and serious tissue damage.
+Soft Tissue Disorders: >
+  Soft tissue musculoskeletal disorders refer to nonsystemic, focal pathologic syndromes involving the periarticular tissues, including muscle, tendon, ligament, fascia, aponeurosis, retinaculum, bursa, and subcutaneous tissue. 
 Spermatogenesis: >
   Spermatogenesis refers to the production and development of mature spermatozoa.
 Stomach Cancer: >
@@ -741,6 +755,9 @@ Testosterone: >
   In male humans, testosterone plays a key role in the development of male reproductive tissues such as testes and prostate, as well as promoting secondary sexual characteristics such as increased muscle and bone mass, and the growth of body hair.
 Thrombosis: >
   Thrombosis is the coagulation of the blood in a blood-vessel or in the heart causing an obstruction of a blood vessel by a clot formed at the site of obstruction.
+Toddler: >
+  A toddler is a child approximately 12 to 36 months old, though definitions vary.
+  The word is derived from "to toddle", which means to walk unsteadily, like a child of this age.
 Toxoplasmosis: >
   Toxoplasmosis is a parasitic disease caused by Toxoplasma gondii.
   Infections with toxoplasmosis usually cause no obvious symptoms in adults.
@@ -800,3 +817,4 @@ Wound Healing: >
 Yeast Infections: >
   Yeast infection refers to an infection of the vagina caused by a fungus known as Candida.
   A vaginal yeast infection is characterized by itching, burning, soreness, pain during intercourse and/or urination, and vaginal discharge that is typically cheesy white in color.
+A toddler is a child approximately 12 to 36 months old, though definitions vary. The toddler years are a time of great cognitive, emotional and social development. The word is derived from "to toddle", which means to walk unsteadily, like a child of this age.
