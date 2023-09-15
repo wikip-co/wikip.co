@@ -1,8 +1,14 @@
 # wikip.co
 A static wiki built with node.js
 
-- https://www.wikip.co/ (WWW - Cloudflare)
-- https://ipfs.wikip.co/ (IPFS - Fleek.co)
+- URLs
+  - Cloudflare:
+    - https://wikip.co/
+    - https://www.wikip.co/
+    - https://b176da6f.public-kb6.pages.dev/
+  - Fleek.co
+    - https://ipfs.wikip.co/
+    - https://wikip.on.fleek.co/
 
 - Docker Hub
   - https://hub.docker.com/r/anthonyrussano/wikip.co
