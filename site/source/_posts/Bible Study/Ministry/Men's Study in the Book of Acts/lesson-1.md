@@ -1,5 +1,5 @@
 ---
-title: The Mission Church: Men's Study - Lesson 1
+title: "The Mission Church: Men's Study - Lesson 1"
 image: ministry
 tags:
 - Religion
