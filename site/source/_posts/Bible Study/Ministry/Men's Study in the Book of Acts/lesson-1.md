@@ -57,7 +57,7 @@ In summary, the word "began" in the Book of Acts indicates that the work of Jesu
 
 ### Answer to Question Two
 
-
+...
 
 [^1]: **Title:** []()<br>
 **Publication:** []()<br>
