@@ -79,6 +79,75 @@ Peter’s transformation from a state of denial to bold proclamation is attribut
 
 Peter’s transformation is a testament to the transformative power of the Holy Spirit and the resurrection of Jesus Christ. His message to the Jewish leaders encapsulated the core of the Christian gospel: Jesus' divine authority, His resurrection, and His unique role in salvation.
 
+# Acts 4:13-22
+## Question Four
+What did the religious leaders notice about Peter and John (v13)?
+
+> _13 When they saw the courage of Peter and John and realized that they were unschooled, ordinary men, they were astonished and they took note that these men had been with Jesus._
+
+### What the Religious Leaders Noticed:
+
+1. **Courage and Boldness:**
+   - The religious leaders observed that Peter and John spoke with courage and boldness. Despite facing a formidable assembly of religious authorities, they didn’t back down or show signs of intimidation or fear.
+
+2. **Lack of Formal Education:**
+   - They noticed that Peter and John were "unschooled, ordinary men," meaning that they didn’t have formal religious education or Rabbinic training. This was surprising to the religious leaders, given the confidence and authority with which Peter and John spoke.
+
+3. **Association with Jesus:**
+   - The religious leaders recognized that Peter and John had been with Jesus. This association helped them understand the source of Peter and John’s boldness and authority, as their demeanor and message were consistent with the teachings and manner of Jesus.
+
+The religious leaders were astonished by the boldness and confidence of Peter and John, especially considering their lack of formal religious education. The leaders realized that their association with Jesus was a significant factor in their demeanor and message, reflecting the impact of Jesus’ teachings and presence on his followers.
+
+## Question Four A
+We cannot spend time with Jesus physically as the disciples did, but we can defintely spend time with Jesus by studying His Word.  As we spend time with Jesus, we also grow in wisdom, discernment, leadership, personal character, integrity, and our boldness to testify of Him.  Without ever realizing it, the disciples had grown tremendously, and this was evident to all.  Do others recognize you as having spent time with Jesus? Or do you simply blend in like everyone else?
+
+A core aspect of Christian spiritual life is the transformative impact of spending time with Jesus through prayer, worship, and studying His Word.
+
+### Spending Time with Jesus Today:
+
+- **Studying the Word:** Engaging deeply with the Scriptures allows us to know Jesus better, understand His teachings, and apply them in our lives.
+- **Prayer:** Through prayer, we can have a personal conversation with God, expressing our thoughts, feelings, and desires, and listening to His guidance.
+- **Worship:** Participating in worship, whether individually or collectively, allows us to express our love, reverence, and gratitude to God.
+
+### Transformation and Growth:
+
+- **Wisdom and Discernment:** Spending time with Jesus helps us gain wisdom and discernment, enabling us to make choices that align with God’s will.
+- **Character and Integrity:** Our character is molded as we internalize Christ’s teachings and seek to live according to His example.
+- **Boldness in Testimony:** As our relationship with Jesus strengthens, our confidence to share His love and truth with others increases.
+
+### Recognition by Others:
+
+- **Witnessing Our Faith:** Others may notice a difference in our attitudes, behaviors, and priorities as a result of our relationship with Jesus.
+- **Influence:** Our growth and transformation can influence others positively, leading them towards a relationship with Jesus.
+
+### Reflection:
+
+- **Self-Examination:** It’s beneficial to regularly examine whether our lives reflect Christ’s influence and whether we are lights in the world.
+- **Intentionality:** Being intentional about spending time with Jesus and seeking transformation ensures that our faith remains vibrant and influential.
+
+Our spiritual growth and transformation become evident to others as we consistently spend time with Jesus and allow His teachings and presence to shape our lives. This influence can be a powerful testimony, drawing others towards the love and truth found in Christ. Being mindful of our spiritual journey's outward reflection encourages us to pursue a genuine and transformative relationship with Jesus.
+
+When you ask, "Or do you simply blend in like everyone else?" you are raising a question about the visibility and distinctiveness of one's Christian faith in their daily life and interactions. It points towards the following considerations:
+
+### 1. **Visibility of Faith:**
+   - **Does your faith manifest in your actions and decisions?** The question invites reflection on whether one's faith is evident through their behavior, choices, and way of interacting with others.
+
+### 2. **Distinctiveness:**
+   - **Is there something different in your demeanor or lifestyle that reflects Christian values?** It challenges one to consider whether their faith makes them stand out in some way, showcasing the transformative power of the Gospel.
+
+### 3. **Influence and Testimony:**
+   - **Does your life bear witness to your faith in Christ?** The question encourages evaluating whether one's life serves as a testimony, influencing others positively towards Christ.
+
+### 4. **Integration with the World:**
+   - **Are Christian principles integrated into every aspect of life, or is faith compartmentalized?** It encourages reflection on whether faith is a pervasive influence or limited to certain aspects of life.
+
+### 5. **Authenticity:**
+   - **Is the faith professed aligned with the life lived?** This question underscores the importance of authenticity and consistency in one’s faith journey.
+
+The question "Or do you simply blend in like everyone else?" is an invitation to reflect on the lived expression of one’s faith. It encourages individuals to consider whether their relationship with Christ is vibrant and transformative, making a noticeable impact on their lives, or whether it's indistinct and submerged within societal norms and expectations. It emphasizes the aspirational aspect of Christian living — to be a light in the world, embodying and sharing the love and truth of Christ.
+
+
+
 [^1]: **Title:** []()<br>
 **Publication:** []()<br>
 **Archive:** [archive]()
