@@ -6,6 +6,8 @@ tags:
 ---
 The Late Medieval Period, also known as the Late Middle Ages, roughly spans from 1300 to 1500 AD. This period is marked by significant events and transitions leading up to the Renaissance. The Late Medieval Period was a time of turmoil but also of cultural and societal advancements. It laid the groundwork for the Renaissance and the modern era.
 
+The Late Middle Ages followed the High Middle Ages and preceded the onset of the early modern period.
+
 ## Key Events and Developments
 
 ### Europe
