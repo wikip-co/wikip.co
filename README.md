@@ -5,7 +5,7 @@ A static wiki built with node.js
   - Cloudflare:
     - https://wikip.co/
     - https://www.wikip.co/
-    - https://b176da6f.public-kb6.pages.dev/
+    - https://public-kb6.pages.dev/
   - Fleek.co
     - https://ipfs.wikip.co/
     - https://wikip.on.fleek.co/
