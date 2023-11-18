@@ -1,6 +1,5 @@
-version: '3'
 services:
-  myapp:
+  wikip-server:
     build:
       context: .
       dockerfile: Dockerfile
