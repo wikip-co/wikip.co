@@ -4,6 +4,12 @@ image: cncf
 tags:
 - Fundamentals
 ---
+## Quick Links
+
+- https://github.com/cncf
+- https://www.cncf.io/
+- https://twitter.com/CloudNativeFdn
+
 ## Description
 
 CNCF stands for the Cloud Native Computing Foundation. They are a Linux Foundation founded in 2015 to help sustain and integrate open source technologies to orchestrate "containers" as part of a microservices architecture.[^1]
