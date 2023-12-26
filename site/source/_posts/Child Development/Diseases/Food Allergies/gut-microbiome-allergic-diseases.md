@@ -140,7 +140,7 @@ The plant-based diet is based mainly on plants such as vegetables, fruits, seeds
 
 [^1]: **Title:** [The importance of the gut microbiome in the development of allergic diseases](https://doi.org/10.5114/pja.2023.131711)<br>
 **Publication:** [Alergologia Polska - Polish Journal of Allergology](https://www.termedia.pl/Journal/Alergologia_Polska_Polish_Journal_of_Allergology-123)<br>
-**Archive:** [archive](https://bafybeietcvdp3l7i4yo2pnhp6ep7d6s756wm6q4cb7a5pfsifvmnvonsxy.ipfs.w3s.link/PJA_Art_51560-10.pdf)
+**Archive:** [archive](https://bafkreieirnvd4dcubhvg4jtcovpsve3pj4t42zox2fe7n557a6xphtczs4.ipfs.w3s.link/)
 
 [^2]: **Title:** []()<br>
 **Publication:** []()<br>
