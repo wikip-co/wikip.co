@@ -147,7 +147,7 @@ Rhodioloside was shown to reduce neurological deficit scores and increase neuron
 **Date:** March 2023<br>
 **Author(s):** Ting Zhu1, Hui Liu2, Shiman Gao3, Shuai Chen4, Ning Jiang5, Weijie Xie6<br>
 **Institutions:** 1 Qingdao University, 2 Guiyang Medical University: Guizhou Medical University, 3 Qingdao University Affiliated Qingdao Women and Childrens Hospital: Qingdao Women and Children's Hospital, 4 Wuhan University School of Public Health, 5 Chinese Academy of Medical Sciences & Peking Union Medical College Institute of Medicinal Plant Development, 6 Shanghai Jiao Tong University School of Medicine Affiliated Shanghai Mental Health Center: Shanghai Mental Health Center<br>
-**Copy:** [archive](https://ipfs.io/ipfs/bafybeico5ihirbunk5orvoqcaxec4w7lmahjcpjs7tpev6u6hdwh3oebim), [archive-mirror](https://cloudflare-ipfs.com/ipfs/bafybeico5ihirbunk5orvoqcaxec4w7lmahjcpjs7tpev6u6hdwh3oebim)
+**Copy:** [archive](https://bafybeihpwfi7kcm3ujule2e6nfsm353ea65lofnjisrsamtwlagmzgueye.ipfs.w3s.link/)
 
 [^5]: **Title:** []()<br>
 **Publication:** []()<br>
