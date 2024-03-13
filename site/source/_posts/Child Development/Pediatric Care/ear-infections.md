@@ -82,6 +82,9 @@ The onset of signs and symptoms is usually rapid.
 
 #### Antibiotic Therapy
 
+- Antibiotics are not often used to treat middle ear infections, as they are often caused by a virus.[^6]
+  - Antibiotics do not treat viruses.[^6]
+  - In very young or very unwell children, the GP may prescribe a short course of antibiotics if there's risk of bacterial infection.[^6]
 - Episodes of acute otitis media are often self-limiting and resolve without treatment. [^3]
 - Antibiotics are regularly prescribed because, if persistent, this type of ear infection can develop into chronic ear disease that may lead to: [^3]
   - Perforation of the tympanic membrane
@@ -155,3 +158,7 @@ The disrupted microbial spectrum of the oral and respiratory microbiome disturbs
 [^5]: **Title:** [Delayed prescription of antibiotics and the capabilities of herbal medicine when used in respiratory infections](https://doi.org/10.1186/s40816-023-00364-5)<br>
 **Publication:** [Clinical Phytoscience](https://link.springer.com/journal/40816)<br>
 **Archive:** [archive](https://bafybeicsu5cy6ff5jq6inlr2hdg3kb4ymjjdc6ldm5ijb3fgjlycrozkxa.ipfs.w3s.link/ipfs/bafybeicsu5cy6ff5jq6inlr2hdg3kb4ymjjdc6ldm5ijb3fgjlycrozkxa/s40816-023-00364-5.pdf)
+
+[^6]: **Title:** [Ear infections and glue ear](https://www.rch.org.au/kidsinfo/fact_sheets/ear_infections_and_otitis_media/)<br>
+**Publication:** [The Royal Children's Hospital Melbourne](https://www.rch.org.au/)<br>
+**Archive:** [archive](https://bafybeigvevxtgn6bref3etzu5y2pwzy4kcw7czsnb6wnmsdh2ulh4wfffi.ipfs.w3s.link/ipfs/bafybeigvevxtgn6bref3etzu5y2pwzy4kcw7czsnb6wnmsdh2ulh4wfffi/Kids%20Health%20Information%20_%20Ear%20infections%20and%20glue%20ear.pdf)
