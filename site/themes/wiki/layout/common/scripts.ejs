@@ -4,6 +4,8 @@ var search_path = "<%- url_for('search.xml') %>";
 
 var path = "<%- url_for('search.xml') %>";
 
+var rssurl = "<%- url_for('rss2.xml') %>";
+
 searchFunc(path, 'local-search-input', 'local-search-result');
 
 </script>
@@ -43,7 +45,7 @@ function myFunction2() {
 
 function myFunction3() {
   
-  window.open('https://wikip.co/rss2.xml', '_blank');  
+  window.open(rssurl, '_blank');  
 
 }
 
