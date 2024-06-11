@@ -32,8 +32,6 @@ Helps repair the inner lining of blood vessels.
 
 - Urolithin compounds in pomegranate are able to cross the BBB and contribute to its anti-Alzheimer’s disease effects.[^1]
 
-[^1]: **Title:** <br>**Author(s):**  <br>**Institution(s):** <br>**Publication:** <i></i><br>**Date:** June 2024<br>**Link:** <br>**Citations:**
-
 [^1]: 
 **Title:** [Modulatory Effects of Phytochemicals on Gut–Brain Axis: Therapeutic Implication](https://doi.org/10.1016/j.cdnut.2024.103785)<br>
 **Publication:** [Current Developments in Nutrition](https://www.sciencedirect.com/journal/current-developments-in-nutrition)<br>
