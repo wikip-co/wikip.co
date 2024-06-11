@@ -32,6 +32,22 @@ Helps repair the inner lining of blood vessels.
 
 - Urolithin compounds in pomegranate are able to cross the BBB and contribute to its anti-Alzheimer’s disease effects.[^1]
 
-[^1]: **Title:** Modulatory Effects of Phytochemicals on Gut–Brain Axis: Therapeutic Implication<br>**Author(s):**  Khojasteh Rahimi Jaberi, Vahab Alamdari-palangi, Amir Savardashtaki, Pooya Vatankhah, Tannaz Jamialahmadi, Amir Tajbakhsh, Amirhossein Sahebkar<br>**Institution(s):** Mashhad University of Medical Sciences, Mashhad, Iran; Shiraz University of Medical Sciences, Shiraz, Iran<br>**Publication:** <i>[Current Developments in Nutrition](https://www.sciencedirect.com/journal/current-developments-in-nutrition)</i><br>**Date:** June 2024<br>**Link:** https://doi.org/10.1016/j.cdnut.2024.103785<br>**Citations:**
+[^1]: **Title:** <br>**Author(s):**  <br>**Institution(s):** <br>**Publication:** <i></i><br>**Date:** June 2024<br>**Link:** <br>**Citations:**
 
-[^2]: **Title:** <br>**Author(s):**  <br>**Institution(s):** <br>**Publication:** <i> </i><br>**Date:** <br>**Abstract:** <i> </i><br>**Link:** []()<br>**Citations:**
+[^1]: 
+**Title:** [Modulatory Effects of Phytochemicals on Gut–Brain Axis: Therapeutic Implication](https://doi.org/10.1016/j.cdnut.2024.103785)<br>
+**Publication:** [Current Developments in Nutrition](https://www.sciencedirect.com/journal/current-developments-in-nutrition)<br>
+**Date:** June 2024<br>
+**Author(s):** Khojasteh Rahimi Jaberi, Vahab Alamdari-palangi, Amir Savardashtaki, Pooya Vatankhah, Tannaz Jamialahmadi, Amir Tajbakhsh, Amirhossein Sahebkar<br>
+**Institution(s):** Mashhad University of Medical Sciences, Mashhad, Iran; Shiraz University of Medical Sciences, Shiraz, Iran<br>
+**Copy:** [archive](https://bafybeiciveeead2gv5nbf7uuodwksgwmxzackpd7trk6mpmucoptdh45ta.ipfs.w3s.link/Modulatory-Effects-of-Phytochemicals-on-Gut-Brain-_2024_Current-Developments.pdf)
+
+[^2]: 
+**Title:** [ ]( )<br>
+**Publication:** [ ]( )<br>
+**Date:** <br>
+**Study Type:** Animal Study, Commentary, Human Study: In Vitro - In Vivo - In Silico, Human: Case Report, Meta Analysis, Review<br>
+**Author(s):** <br>
+**Institution(s):** <br>
+**Abstract:** <br>
+**Copy:** [archive](https://ipfs.io/ipfs/), [archive-mirror](https://cloudflare-ipfs.com/ipfs/)
