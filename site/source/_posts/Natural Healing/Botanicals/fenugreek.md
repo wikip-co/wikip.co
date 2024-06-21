@@ -4,7 +4,8 @@ tags:
 - Immune System
 - Antiinflammatory
 ---
-**Fenugreek** (Trigonella foenum-graecum)
+**Fenugreek** (Trigonella foenum-graecum) is a native plant found in the parts of Iran to the North of India, and is presently planted also in other regions of the world.[^2]
+
 
 ## Composition
 
@@ -12,13 +13,40 @@ tags:
 
 ### Anticancer
 
-#### Antitumor
+#### Antitumor (anti-tumor)
+
+### Anti-cholesterolemic
 
 ### Antidiabetic
 
 ### Anti-Inflammatory
 
 ### Appetite suppressant
+
+### Bone Health
+
+### Cardiovascular Health (Heart Health)
+
+### Carminative
+
+### Demulcent
+
+### Deobstruent
+
+### Emollient
+
+### Endocrine Health
+
+### Expectorant
+
+### Febrifuge
+
+### Femal Reproductive Health
+
+- Fenugreek helps reduce menstrual discomfort.[^2]
+- Fenugreek helps reduce menopause symptoms.[^2]
+
+### Gastro-Intestinal Health
 
 ### Heart Health
 
@@ -30,11 +58,45 @@ The Hypocholesterolaemic (cholesterol lowering) effects of fenugreek are attribu
 
 The Hypoglycaemic (bloof surgar lowering) effects of fenugreek are attributed to its major steroidal sapogenin, diosgenin and its major alkaloid (trigonelline).[^1]
 
+### Lactation
+
+Fenugreek helps increase milk production.[^2]
+
+### Laxative
+
+### Liver Health
+
+### Muscle Health
+
 ### Parasiticide
+
+### Respiratory Health
+
+### Restorative
+
+### Uterine Tonic
 
 ### Weight Loss
 
+Fenugreek is an appetite suppressant that helps in weight loss.[^2]
+
 ## Disease / Symptom Treatment
+
+### Acid Reflux
+
+Fenugreek is a good consolation for acid reflux.[^2]
+
+### Cancer
+
+#### Colon Cancer
+
+### Constipation
+
+### Skin Infection
+
+### Sore Throat
+
+Fenugreek is a good consolation for sore throats.[^2]
 
 [^1]: **Title:** [Anti-Inflammatory activity in vitro and in vivo of ethanolic extracts of Stevia rebaudiana Bertoni and Trigonella foenum-graecum](https://dx.doi.org/10.21608/sjas.2020.48817.1053)<br>
 **Publication:** [Beni-Suef University Faculty of Agriculture Scientific Journal of Agricultural Sciences](https://sjas.journals.ekb.eg/)<br>
