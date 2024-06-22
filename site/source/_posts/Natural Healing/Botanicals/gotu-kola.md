@@ -52,9 +52,15 @@ Prevents Ionizing Radiation-induced migration and invasion of cancer cells.[^1]
 
 ### Brain Health
 
+- Gotu Kola supports neuroprotection and cognitive enhancement.[^2]
+
 #### Memory Enhancer
 
 #### Neuroprotective
+
+### Cholesterol Metabolism
+
+- Gotu Kola reduces cholesterol synthesis and LDL levels.[^2]
 
 ### Hepatoprotective
 
@@ -87,10 +93,10 @@ Triterpenoids 1–3 isolated from C. asiatica are candidate natural compounds to
 **Institutions:** Korea Atomic Energy Research Institute, Jeongeup-si, Jeollabuk-do, Republic of Korea; Jaseng Medical Foundation, Seoul, Republic of Korea; Ewha Womans University, Seoul, Republic of Korea; Jeonju AgroBio-Materials Institute, Jeonju-si, Jeollabuk-do, Republic of Korea<br>
 **Copy:** [archive](https://ipfs.io/ipfs/QmS9J5g2qpdBv6thC2czchBLp9WVK3aPahGQ2d9yJ5caX3), [archive-mirror](https://cloudflare-ipfs.com/ipfs/QmS9J5g2qpdBv6thC2czchBLp9WVK3aPahGQ2d9yJ5caX3)
 
-[^2]: **Title:** []()<br>
-**Publication:** []()<br>
-**Date:** <br>
-**Study Type:** Animal Study, Commentary, Human Study: In Vitro - In Vivo - In Silico, Human: Case Report, Meta Analysis, Review<br>
-**Author(s):** <br>
-**Institutions:** <br>
-**Copy:** [archive](https://ipfs.io/ipfs/), [archive-mirror](https://cloudflare-ipfs.com/ipfs/)
+[^2]: **Title:** [Modulation of Cholesterol metabolism with Phytoremedies in Alzheimer’s disease: A comprehensive Review](https://doi.org/10.1016/j.arr.2024.102389)<br>
+**Publication:** [Ageing Research Reviews](https://www.sciencedirect.com/journal/ageing-research-reviews)<br>
+**Date:** June 2024<br>
+**Study Type:** Review<br>
+**Author(s):** Sushruta Koppula, Nitu L. Wankhede, Shivkumar S. Sammeta, Prajwali V. Shende, Rupali S. Pawar, Niyamat Chimthanawala, Mohit D. Umare, Brijesh G. Taksande, Aman B. Upaganlawar, Milind J. Umekar, Spandana Rajendra Kopalli, Mayur B. Kale<br>
+**Institutions:** Konkuk University, Chungju-Si, Chungcheongbuk Do, Republic of Korea; Kishoritai Bhoyar College of Pharmacy, Kamptee, Nagpur, Maharashtra, India; National Institute of Pharmaceutical Education and Research, Hyderabad, Telangana; Institute of Chemical Technology, Mumbai; SNJB’s Shriman Sureshdada Jain College of Pharmacy, Neminagar, Chandwad, Nashik, Maharashtra, India ; Sejong University, Gwangjin-gu, Seoul, Republic of Korea.<br>
+**Copy:** [archive](https://bafybeibjodu2sohffwrshtaftfjmdj4ngev6zkqbkdnonmtkax54bvblye.ipfs.w3s.link/1-s2.0-S1568163724002071-main.pdf)

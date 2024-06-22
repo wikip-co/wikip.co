@@ -3,6 +3,7 @@ title: Bacopa
 tags:
 - Adaptogen
 - Amnesia
+- Antioxidant
 - Apoptosis
 - Stress
 - Colon Cancer
@@ -12,6 +13,7 @@ tags:
 - Anxiolytic
 - Anxiety
 - Learning
+- Cholesterol
 - Colorectal Cancer
 - Depression
 - Antidepressant
@@ -61,7 +63,17 @@ Bacopaside II, an extract from the medicinal herb Bacopa monnieri. has promising
 
 Methanolic extract of B. monnieri given once daily for 5 days showed significant antidepressant activity.[^1]
 
-### Cognition-Enhancing (Nootropic)
+### Antioxidant
+
+- Bacopa contains active compounds called bacosides, which have been shown to possess antioxidant properties.[^5]
+
+### Cholesterol Metabolism
+
+- Bacopa regulates cholesterol transporters.[^5]
+
+### Brain Health
+
+#### Cognition-Enhancing (Nootropic)
 
 - Alcoholic extract of B. monnieri improves the performance in various learning situations.[^1]
 - Bacosides enhance the protein kinase activity in the hippocampus which could be contributing factor to the nootropic activity.
@@ -70,6 +82,7 @@ Methanolic extract of B. monnieri given once daily for 5 days showed significant
 
 #### Learning
 
+- Bacopa enhances synaptic plasticity and cognitive performance.[^5]
 - Treatment with the ethanolic extract of B. monnieri showed enhanced learning ability.
 - Bacosides A and B have facilitatory effect on mental retention capacity as they tend to improve responses with positive and negative reinforcement.
 
@@ -171,10 +184,10 @@ Extract of Bacopa monniera has been reported to improve cognition in old-age peo
 **Institutions:** Tanta University, Tanta, Egypt<br>
 **Copy:** [archive](https://ipfs.io/ipfs/QmSVYjrKp6XGXnhS8HaAodYFrsVQZ6G331TW4sUNEMwXgq), [archive-mirror](https://cloudflare-ipfs.com/ipfs/QmSVYjrKp6XGXnhS8HaAodYFrsVQZ6G331TW4sUNEMwXgq)
 
-[^5]: **Title:** []()<br>
-**Publication:** []()<br>
-**Date:** <br>
-**Study Type:** Animal Study, Commentary, Human Study: In Vitro - In Vivo - In Silico, Human: Case Report, Meta Analysis, Review<br>
-**Author(s):** <br>
-**Institutions:** <br>
-**Copy:** [archive](https://ipfs.io/ipfs/), [archive-mirror](https://cloudflare-ipfs.com/ipfs/)
+[^5]: **Title:** [Modulation of Cholesterol metabolism with Phytoremedies in Alzheimer’s disease: A comprehensive Review](https://doi.org/10.1016/j.arr.2024.102389)<br>
+**Publication:** [Ageing Research Reviews](https://www.sciencedirect.com/journal/ageing-research-reviews)<br>
+**Date:** June 2024<br>
+**Study Type:** Review<br>
+**Author(s):** Sushruta Koppula, Nitu L. Wankhede, Shivkumar S. Sammeta, Prajwali V. Shende, Rupali S. Pawar, Niyamat Chimthanawala, Mohit D. Umare, Brijesh G. Taksande, Aman B. Upaganlawar, Milind J. Umekar, Spandana Rajendra Kopalli, Mayur B. Kale<br>
+**Institutions:** Konkuk University, Chungju-Si, Chungcheongbuk Do, Republic of Korea; Kishoritai Bhoyar College of Pharmacy, Kamptee, Nagpur, Maharashtra, India; National Institute of Pharmaceutical Education and Research, Hyderabad, Telangana; Institute of Chemical Technology, Mumbai; SNJB’s Shriman Sureshdada Jain College of Pharmacy, Neminagar, Chandwad, Nashik, Maharashtra, India ; Sejong University, Gwangjin-gu, Seoul, Republic of Korea.<br>
+**Copy:** [archive](https://bafybeibjodu2sohffwrshtaftfjmdj4ngev6zkqbkdnonmtkax54bvblye.ipfs.w3s.link/1-s2.0-S1568163724002071-main.pdf)

@@ -50,9 +50,15 @@ tags:
 
 ### Heart Health
 
-### Hypocholesterolaemic (anticholesterolemic)
+### Cholesterol Metabolism
 
-The Hypocholesterolaemic (cholesterol lowering) effects of fenugreek are attributed to its major steroidal sapogenin, diosgenin and its major alkaloid (trigonelline).[^1]
+- Fenugreek inhibits cholesterol absorption and synthesis.[^3]
+- Fenugreek may help manage cholesterol levels and support cognitive health.[^3]
+
+
+#### Hypocholesterolaemic (anticholesterolemic)
+
+- The Hypocholesterolaemic (cholesterol lowering) effects of fenugreek are attributed to its major steroidal sapogenin, diosgenin and its major alkaloid (trigonelline).[^1]
 
 ### Hypoglycaemic 
 
@@ -113,10 +119,10 @@ Fenugreek is a good consolation for sore throats.[^2]
 **Author(s):** Wenli Sun, Mohamad Hesam Shahrajabian, Qi Cheng<br>
 **Institutions:** Biotechnology Research Institute, Chinese Academy of Agricultural Sciences, Beijing, China<br>
 
-[^3]: **Title:** []()<br>
-**Publication:** []()<br>
-**Date:** <br>
-**Study Type:** Animal Study, Commentary, Human Study: In Vitro - In Vivo - In Silico, Human: Case Report, Meta Analysis, Review<br>
-**Author(s):** <br>
-**Institutions:** <br>
-**Copy:** [archive](https://ipfs.io/ipfs/), [archive-mirror](https://cloudflare-ipfs.com/ipfs/)
+[^3]: **Title:** [Modulation of Cholesterol metabolism with Phytoremedies in Alzheimer’s disease: A comprehensive Review](https://doi.org/10.1016/j.arr.2024.102389)<br>
+**Publication:** [Ageing Research Reviews](https://www.sciencedirect.com/journal/ageing-research-reviews)<br>
+**Date:** June 2024<br>
+**Study Type:** Review<br>
+**Author(s):** Sushruta Koppula, Nitu L. Wankhede, Shivkumar S. Sammeta, Prajwali V. Shende, Rupali S. Pawar, Niyamat Chimthanawala, Mohit D. Umare, Brijesh G. Taksande, Aman B. Upaganlawar, Milind J. Umekar, Spandana Rajendra Kopalli, Mayur B. Kale<br>
+**Institutions:** Konkuk University, Chungju-Si, Chungcheongbuk Do, Republic of Korea; Kishoritai Bhoyar College of Pharmacy, Kamptee, Nagpur, Maharashtra, India; National Institute of Pharmaceutical Education and Research, Hyderabad, Telangana; Institute of Chemical Technology, Mumbai; SNJB’s Shriman Sureshdada Jain College of Pharmacy, Neminagar, Chandwad, Nashik, Maharashtra, India ; Sejong University, Gwangjin-gu, Seoul, Republic of Korea.<br>
+**Copy:** [archive](https://bafybeibjodu2sohffwrshtaftfjmdj4ngev6zkqbkdnonmtkax54bvblye.ipfs.w3s.link/1-s2.0-S1568163724002071-main.pdf)
