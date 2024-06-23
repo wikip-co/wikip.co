@@ -21,6 +21,7 @@ including transduction and protein trafficking.[^1]
 - Cholesterol influences the organization and function of neurotransmitter receptors, hence altering signal transmission between the neurons.[^1]
 - Cholesterol regulates synaptic vesicle release, which is required for effective neurotransmission.[^1]
 - Cholesterol contributes to the creation and stability of dendritic spines, which are tiny protrusions on neurons that are essential for synaptic connection and plasticity.[^1]
+  - Example: https://bafybeiah63anbqmyp4wnmti2xysscqmpeoamfi3nvyaurpjoosmlmguv4q.ipfs.w3s.link/170a1fd5-813a-40b8-8cd9-e6311ce3f7e8
 - Cholesterol is a precursor for the manufacture of neurosteroids, which are steroid hormones that affect neuronal excitability and have neuroprotective properties.[^1]
 - Cholesterol-derived neurosteroids regulate synaptic activity, improve neuronal longevity, and influence cognitive performance.[^1]
 - Cholesterol plays a crucial role in maintaining brain cell integrity and function.[^1]
