@@ -21,7 +21,10 @@ including transduction and protein trafficking.[^1]
 - Cholesterol influences the organization and function of neurotransmitter receptors, hence altering signal transmission between the neurons.[^1]
 - Cholesterol regulates synaptic vesicle release, which is required for effective neurotransmission.[^1]
 - Cholesterol contributes to the creation and stability of dendritic spines, which are tiny protrusions on neurons that are essential for synaptic connection and plasticity.[^1]
-  - Example: https://bafybeiah63anbqmyp4wnmti2xysscqmpeoamfi3nvyaurpjoosmlmguv4q.ipfs.w3s.link/170a1fd5-813a-40b8-8cd9-e6311ce3f7e8
+  - See video example illustrating dendritic spines:[^2]
+
+<iframe src="https://bafybeiaxmwnrs4vhblt55sk4c2m7znddvos7khkuri6ggfoyo4yky4esp4.ipfs.dweb.link/Microtubule%20Rejuvenation%20in%20Neurons%20%5B6CNJ7V4FpHc%5D.mp4" allowfullscreen></iframe>
+
 - Cholesterol is a precursor for the manufacture of neurosteroids, which are steroid hormones that affect neuronal excitability and have neuroprotective properties.[^1]
 - Cholesterol-derived neurosteroids regulate synaptic activity, improve neuronal longevity, and influence cognitive performance.[^1]
 - Cholesterol plays a crucial role in maintaining brain cell integrity and function.[^1]
@@ -59,3 +62,5 @@ including transduction and protein trafficking.[^1]
 **Author(s):** Sushruta Koppula, Nitu L. Wankhede, Shivkumar S. Sammeta, Prajwali V. Shende, Rupali S. Pawar, Niyamat Chimthanawala, Mohit D. Umare, Brijesh G. Taksande, Aman B. Upaganlawar, Milind J. Umekar, Spandana Rajendra Kopalli, Mayur B. Kale<br>
 **Institutions:** Konkuk University, Chungju-Si, Chungcheongbuk Do, Republic of Korea; Kishoritai Bhoyar College of Pharmacy, Kamptee, Nagpur, Maharashtra, India; National Institute of Pharmaceutical Education and Research, Hyderabad, Telangana; Institute of Chemical Technology, Mumbai; SNJB’s Shriman Sureshdada Jain College of Pharmacy, Neminagar, Chandwad, Nashik, Maharashtra, India ; Sejong University, Gwangjin-gu, Seoul, Republic of Korea.<br>
 **Copy:** [archive](https://bafybeibjodu2sohffwrshtaftfjmdj4ngev6zkqbkdnonmtkax54bvblye.ipfs.w3s.link/1-s2.0-S1568163724002071-main.pdf)
+
+[^2]: https://www.cuimc.columbia.edu/news/alzheimers-old-parts-inside-neurons-may-impair-memory
