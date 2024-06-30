@@ -30,6 +30,7 @@ tags:
 - Now Daniel is promoted to be an advisor for the babylonian king.
 - King Nebuchenezzer has a troubling dream.
   - In verse 4 the book of danile goes from hebrew to arahmaiac (very unusual)
+  - Hebrew is the language to the Jews, Arahamaic was the language to the entire world (at that time). This was a message to the entire world!
   - the majority of the old testament was written in hebrew, and now it changes to arahmaic
 
 - Verse 5-6:
