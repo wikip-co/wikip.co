@@ -83,3 +83,52 @@ tags:
   - Profiting from Trials
     - "My brethren, count it all joy when you fall into various trials, knowing that the testing of your faith produces patience. But let patience have its perfect work, that you may be perfect and complete, lacking nothing. If any of you lacks wisdom, let him ask of God, who gives to all liberally and without reproach, and it will be given to him. But let him ask in faith, with no doubting, for he who doubts is like a wave of the sea driven and tossed by the wind. For let not that man suppose that he will receive anything from the Lord; he is a double-minded man, unstable in all his ways."
 
+
+- What an authentic Relationship with God Looks like:
+  - In faith, Daniel stands firm against fierce opposition and hardship.
+    - Instead of worrying and complaining and questioning why God isn't preventing this.
+    - He could have sowed discord among others.
+    - He stands firm in faith even before God reveals anything to him.
+  - Daniel controls his feelings, speaks with wisdom, and leads well.
+    - He goes to his boss and counsels him with wisdom.
+  - In fervent prayer, Daniel seeks God for wisdom.
+    - He calls his buddies to meet and pray with him.
+  - God mercifully provides the solution to Daniel's problem.
+    - God speaks to our heart, and enlightens our understanding, revealing the solution.
+  - Daniel praises God with awe, delight, and love.
+    - He writes a love song of praise to his God.
+  
+Daniel's Song:
+
+- Daniel 2:20-23
+  - New King James Version
+
+"Daniel answered and said:
+  “Blessed be the name of God forever and ever,
+  For wisdom and might are His.
+  And He changes the times and the seasons;
+  He removes kings and raises up kings;
+  He gives wisdom to the wise
+  And knowledge to those who have understanding.
+  He reveals deep and secret things;
+  He knows what is in the darkness,
+  And light dwells with Him.
+
+  “I thank You and praise You,
+  O God of my fathers;
+  You have given me wisdom and might,
+  And have now made known to me what we asked of You,
+  For You have made known to us the king’s demand.”
+
+- God is building Daniel's character under extreme hardship.
+  - He is building Daniel in his ability to stand firm under pressure
+  - In his ability to lead others in prayer, in the word, in faith.
+  - God wants to make Daniel an advisor to kings.
+  - He wants to make Daniel a prophet to the nations.
+  - He is building him as a man, as a man who knows the true and living God.
+
+- Daniel has an authentic relation ship to God.  And God is going to use Daniel in a prophetic and divine way.
+
+- Charles H Spurgeon on Proverbs 30
+  - "One mark of a man’s true wisdom is his knowledge of his ignorance. Have you never noticed how the clean heart always mourns its uncleanness, and the wise man always laments his folly? It needs holiness to detect our own unholiness, and it needs wisdom to discover our own folly. When a man talks of his own cleanness, his very lips are foul with pride; and when a man boasts of his wisdom, he proclaims his folly with trumpet sound."
+
