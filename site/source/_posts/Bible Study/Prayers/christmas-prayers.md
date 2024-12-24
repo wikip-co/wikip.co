@@ -5,7 +5,8 @@ tags:
 ---
 ## Verses
 
-Isaiah 9:6-7
+### Isaiah 9:6-7
+
 ```
 	For unto us a Child is born,
 	Unto us a Son is given;
@@ -21,12 +22,14 @@ Isaiah 9:6-7
 	The zeal of the Lord of hosts will perform this.
 ```
 
-Galatians 4:4-5
+### Galatians 4:4-5
+
 ```
 	But when the fullness of the time had come, God sent forth His Son, born of a woman, born under the law, to redeem those who were under the law, that we might receive the adoption as sons.
 ```
 
-Matthew 1:18-25
+### Matthew 1:18-25
+
 ```
 	Now the birth of Jesus Christ was as follows: After His mother Mary was betrothed to Joseph, before they came together, she was found with child of the Holy Spirit. Then Joseph her husband, being a just man, and not wanting to make her a public example, was minded to put her away secretly. But while he thought about these things, behold, an angel of the Lord appeared to him in a dream, saying, “Joseph, son of David, do not be afraid to take to you Mary your wife, for that which is conceived in her is of the Holy Spirit. And she will bring forth a Son, and you shall call His name Jesus, for He will save His people from their sins.”
 
@@ -35,7 +38,8 @@ Matthew 1:18-25
 	Then Joseph, being aroused from sleep, did as the angel of the Lord commanded him and took to him his wife, and did not know her till she had brought forth her firstborn Son. And he called His name Jesus.
 ```
 
-Luke 2:6-14
+### Luke 2:6-14
+
 ```
 	So it was, that while they were there, the days were completed for her to be delivered. And she brought forth her firstborn Son, and wrapped Him in swaddling cloths, and laid Him in a manger, because there was no room for them in the inn.
 
@@ -46,16 +50,21 @@ Luke 2:6-14
 	“Glory to God in the highest,
 	And on earth peace, goodwill toward men!”
 ```
-Acts 4:10-12
+
+### Acts 4:10-12
+
 ```
 	let it be known to you all, and to all the people of Israel, that by the name of Jesus Christ of Nazareth, whom you crucified, whom God raised from the dead, by Him this man stands here before you whole. This is the ‘stone which was rejected by you builders, which has become the chief cornerstone.’ Nor is there salvation in any other, for there is no other name under heaven given among men by which we must be saved.”
 ```
 	
-Acts 10:43
+### Acts 10:43
+
 ```
 	"To Him all the prophets witness that, through His name, whoever believes in Him will receive remission of sins.”
 ```
-Philippians 2:6-11
+
+### Philippians 2:6-11
+
 ```
 	who, being in the form of God, did not consider it robbery to be equal with God, but made Himself of no reputation, taking the form of a bondservant, and coming in the likeness of men. And being found in appearance as a man, He humbled Himself and became obedient to the point of death, even the death of the cross. Therefore God also has highly exalted Him and given Him the name which is above every name, that at the name of Jesus every knee should bow, of those in heaven, and of those on earth, and of those under the earth, and that every tongue should confess that Jesus Christ is Lord, to the glory of God the Father.
 ```
