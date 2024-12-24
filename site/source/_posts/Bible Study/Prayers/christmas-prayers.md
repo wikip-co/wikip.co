@@ -77,6 +77,10 @@ Philippians 2:6-11
 ### The Virgin Birth is Prophetic (Fulfilled Prophecy).
 #### Isaiah 7:14
 
+```
+Therefore the Lord himself will give you a sign: The virgin will conceive and give birth to a son, and will call him Immanuel.
+```
+
 #### Genesis 3
 
 The Protevangelium ("first gospel proclamation") is seen as a prophecy of the coming of the Messiah and the ultimate victory of Christ over Satan.
