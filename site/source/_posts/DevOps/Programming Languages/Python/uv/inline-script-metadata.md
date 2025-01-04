@@ -1,15 +1,28 @@
 ---
-title: Inline Script Metadata
+title: Managing Python Scripts with uv Inline Metadata
 image: python
 tags:
-- Educational
+- Python
+- Package Management
+- DevTools
 ---
 ## Description
 
+Managing Python script dependencies and version requirements has traditionally been challenging. The `uv` tool, combined with Python's new inline script metadata standard, offers a modern solution to this problem.
+
 Python recently added a standard format for inline script metadata. It allows for selecting Python versions and defining dependencies. 
 
-## Usage[^1]
+## What is Inline Script Metadata?
 
+Python's inline script metadata format provides a standardized way to specify Python versions and dependencies directly within your scripts. When combined with `uv`, this creates a powerful workflow for managing script environments.
+
+## Key Features
+- Declare dependencies inline using TOML format
+- Specify Python version requirements
+- Automatic environment creation
+- Isolated from project dependencies
+
+## Usage[^1]
 
 Use `uv init --script` to initialize scripts with the inline metadata.
 
@@ -77,5 +90,8 @@ The dependencies field must be provided even if empty.
 - uv run will search for and use the required Python version.
 - The Python version will download if it is not installed.
 
+## Additional Resources
+- [uv Documentation](https://docs.astral.sh/uv/)
+- [PEP 723 - Inline Script Metadata](https://peps.python.org/pep-0723/)
 
 [^1]: https://docs.astral.sh/uv/guides/scripts/#creating-a-python-script
