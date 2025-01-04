@@ -1,9 +1,9 @@
 ---
-title: "Acts of the Apostles"
+title: "About the Book of Acts"
 image: Bible
 tags:
 ---
-
+## Acts of the Apostles
 - The Book of Acts is a historical account of the early Church that was written in the late 1st century AD.
 - It has been carefully preserved, translated, and transmitted over the centuries and was early and universally accepted into the New Testament canon.
 - The Book of Acts is traditionally attributed to Luke, a physician and companion of the Apostle Paul. It is considered the second volume in a two-part work, the first being the Gospel of Luke.
