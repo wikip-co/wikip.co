@@ -22,6 +22,11 @@ Python's inline script metadata format provides a standardized way to specify Py
 - Automatic environment creation
 - Isolated from project dependencies
 
+## Prerequisites
+
+- uv installed ( check out [this article](https://wikip.co/what-is-uv/) for more information)
+- Basic familiarity with Python packaging
+
 ## Usage[^1]
 
 Use `uv init --script` to initialize scripts with the inline metadata.
