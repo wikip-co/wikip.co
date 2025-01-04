@@ -10,7 +10,7 @@ tags:
 
 Managing Python script dependencies and version requirements has traditionally been challenging. The `uv` tool, combined with Python's new inline script metadata standard, offers a modern solution to this problem.
 
-Python recently added a standard format for inline script metadata. It allows for selecting Python versions and defining dependencies. 
+Python recently added a standard format for inline script metadata. It allows for selecting Python versions and defining dependencies in a section at the top of the script declaring the dependencies using TOML.
 
 ## What is Inline Script Metadata?
 
