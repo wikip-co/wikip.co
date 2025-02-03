@@ -5,6 +5,8 @@ services:
       dockerfile: Dockerfile
     volumes:
       - ./site/source/_posts:/site/source/_posts:delegated
+      - ./site/themes/wiki:/site/themes/wiki:delegated
+      - ./public:/site/public:delegated
     environment:
       - CHOKIDAR_USEPOLLING=true
     ports:
