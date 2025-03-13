@@ -1,6 +1,10 @@
 title: wikip.co
-cloudinary_user: alchemist-cookbook
-image_transform: /image/upload/w_200,f_auto/
-image_cloud: https://res.cloudinary.com/
+cloudinary_url: https://res.cloudinary.com/alchemist-cookbook
+image_transform_200: /image/upload/w_200,f_auto/
+image_transform_400: /image/upload/w_400,f_auto/
+image_transform_800: /image/upload/w_800,f_auto/
+image_transform_1024: /image/upload/w_1024,f_auto/
+image_transform_1600: /image/upload/w_1600,f_auto/
 favicon: https://res.cloudinary.com/alchemist-cookbook/image/upload/v1661584179/dark_folder.png
-repo: wikip.co
+repo: https://github.com/wikip-co/wikip.co
+branch: main

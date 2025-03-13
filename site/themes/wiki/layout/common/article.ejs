@@ -5,19 +5,18 @@
                 <%- partial('post/cat') %>
             </div>
             <% if (theme.history_control.enable) { 
-                let repertory_address = `${theme.history_control.server_link}/${theme.history_control.user}/${theme.history_control.repertory}`;
-                let file_path = `${theme.history_control.branch}/site/source/${post.source}`;%>
+                let file_path = `${site.data.resources.branch}/site/source/${post.source}`;%>
                 <div class="article-meta-button">
-                    <a href="<%= theme.history_control.server_link %><%= theme.history_control.user %>/<%= site.data.resources.repo %><%= `/edit/main/site/source/_posts/template` %>"> New </a>
+                    <a href="<%= site.data.resources.repo %><%= `/edit/main/site/source/_posts/template` %>"> New </a>
                 </div>
                 <div class="article-meta-button">
-                    <a href='<%= theme.history_control.server_link %><%= theme.history_control.user %>/<%= site.data.resources.repo %><%= `/edit/${file_path}` %>'> Edit </a>
+                    <a href='<%= site.data.resources.repo %><%= `/edit/${file_path}` %>'> Edit </a>
                 </div>
                 <div class="article-meta-button">
-                    <a href='<%= theme.history_control.server_link %><%= theme.history_control.user %>/<%= site.data.resources.repo %><%= `/commits/${file_path}` %>'> History </a>
+                    <a href='<%= site.data.resources.repo %><%= `/commits/${file_path}` %>'> History </a>
                 </div>
                 <div class="article-meta-button">
-                    <a href='<%= theme.history_control.server_link %><%= theme.history_control.user %>/<%= site.data.resources.repo %><%= `/raw/${file_path}` %>'> Source </a>
+                    <a href='<%= site.data.resources.repo %><%= `/raw/${file_path}` %>'> Source </a>
                 </div>
             <% } %>
             <h1 class="article-title">
@@ -25,9 +24,9 @@
             </h1>
             <div style="position: relative; margin: auto;">
                 <% if(page.image) { %>
-                    <img src="<%- site.data.resources.image_cloud %><%- site.data.resources.cloudinary_user %><%- site.data.resources.image_transform %><%- page.image %>" style="border-radius: 25px;border-width: 2px;border-style:inset;">
+                    <img src="<%- site.data.resources.cloudinary_url %><%- site.data.resources.image_transform_200 %><%- page.image %>" style="border-radius: 25px;border-width: 2px;border-style:inset;">
                 <% } else { %>
-                    <img src="<%- site.data.resources.image_cloud %><%- site.data.resources.cloudinary_user %><%- site.data.resources.image_transform %><%- page.title %>" style="border-radius: 25px;border-width: 2px;border-style:inset;">
+                    <img src="<%- site.data.resources.cloudinary_url %><%- site.data.resources.image_transform_200 %><%- page.title %>" style="border-radius: 25px;border-width: 2px;border-style:inset;">
                 <% } %>
                 <div style="text-align:justify;">
                     <% if (page.tags && page.tags.length) { %>

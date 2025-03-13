@@ -6,7 +6,7 @@
                 <div class="widget-wrap">
                     <h3 class="widget-title">   
                         &nbsp;
-                        <span><i onclick="myFunction3()" class="fa fa-rss"></i></span>
+                        <!-- <span><i onclick="myFunction3()" class="fa fa-rss"></i></span> -->
                         <span style="cursor: pointer;" onclick="myFunction1()">Index</span> 
                         <span style="cursor: pointer;" onclick="myFunction2()">Keywords</span> 
                         <a style="display: none;" id='allExpand' href="#">
@@ -19,7 +19,7 @@
                         <% } %>
                     <%- partial('common/search') %>
                     <br>
-                    <input id="local-search-input" type="search" class="ins-search-input" placeholder="Search wikip.co<%= config.root %>" />
+                    <input id="local-search-input" type="search" class="ins-search-input" placeholder="Search..." />
                     <div id="local-search-result"></div>
                     <div id='tags' style="display: none; text-align:justify;"><%- tagcloud(site.tags, {min_font: 22, max_font: 42}) %></div>
                     <!-- placeholder for recent posts section --> 

@@ -81,7 +81,7 @@ markdown:
     case: 0
     separator: '-'
 feed:
-  enable: true
+  enable: false
   type:
     - atom
     - rss2
