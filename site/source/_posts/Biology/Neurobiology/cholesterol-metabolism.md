@@ -12,6 +12,9 @@ tags:
 - Alzheimer's Disease
 - Pathophysiology
 - Neurodegenerative Diseases
+password: "Onelove836!"
+abstract: This content is encrypted. Please enter password to view.
+message: "Authorized access only. Please enter credentials."
 ---
 - Cholesterol is a vital component of cell membranes.[^1]
 - Cholesterol is essential for the formation of specialized membrane microdomains known as lipid rafts, which are involved in cellular activities
