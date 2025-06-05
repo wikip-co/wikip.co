@@ -1,5 +1,5 @@
 ---
-title:"Technical Inaccuracies in NYT’s Article: Trump and Palantir: A New Alliance Raises Questions About Data Use on Americans"
+title:"Technical Inaccuracies in NYT’s Article, Trump and Palantir: A New Alliance Raises Questions About Data Use on Americans"
 image: aws
 tags:
 - Palentir
