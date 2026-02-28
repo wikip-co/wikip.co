@@ -6,6 +6,8 @@ concurrency:
 
 on:
   workflow_dispatch:
+  repository_dispatch:
+    types: [content-updated]
   push:
     branches:
       - main
@@ -39,7 +41,7 @@ jobs:
         git config --global user.email "me@anthonyrussano.com"
         git config --global user.name "Anthony Russano"
         git submodule init
-        git submodule update
+        git submodule update --remote --merge
         git pull
         cd public
         git switch main
