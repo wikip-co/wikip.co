@@ -1,3 +1,6 @@
 [submodule "public"]
 	path = public
 	url = https://github.com/wikip-co/public.git
+[submodule "site/source/_posts"]
+	path = site/source/_posts
+	url = https://github.com/wikip-co/content.git
