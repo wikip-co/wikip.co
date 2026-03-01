@@ -104,13 +104,19 @@ jobs:
         server_port: ${{ secrets.EMAIL_SMTP_PORT }}
         username: ${{ secrets.EMAIL_USERNAME }}
         password: ${{ secrets.EMAIL_PASSWORD }}
-        subject: 'wikip.co Build ${{ job.status }}: ${{ github.event.head_commit.message }}'
+        subject: 'wikip.co deployment ${{ job.status }}'
         to: me@anthonyrussano.com
         from: ${{ secrets.EMAIL_USERNAME }}
-        body: |
-          Repository: ${{ github.repository }}
-          Branch: ${{ github.ref }}
-          Commit: ${{ github.sha }}
-          Status: ${{ job.status }}
-          Workflow: ${{ github.workflow }}
-          Run: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}
+        html_body: |
+          <!DOCTYPE html>
+          <html>
+          <body>
+          <h2>wikip.co Build Report</h2>
+          <p><strong>Status:</strong> ${{ job.status }}</p>
+          <p><strong>Triggered by:</strong> ${{ github.event_name }}</p>
+          <p><strong>Branch:</strong> ${{ github.ref_name }}</p>
+          <p><strong>Commit:</strong> <code>${{ github.sha }}</code></p>
+          <p><strong>Message:</strong> ${{ github.event.head_commit.message }}</p>
+          <p><a href="${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}">View workflow run</a></p>
+          </body>
+          </html>
