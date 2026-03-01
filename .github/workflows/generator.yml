@@ -93,3 +93,22 @@ jobs:
         platforms: linux/amd64,linux/arm64
         push: true
         tags: ${{ steps.prep.outputs.tags }}
+
+    - name: Send email notification
+      if: always()
+      uses: dawidd6/action-send-mail@v3
+      with:
+        server_address: ${{ secrets.EMAIL_SMTP_SERVER }}
+        server_port: ${{ secrets.EMAIL_SMTP_PORT }}
+        username: ${{ secrets.EMAIL_USERNAME }}
+        password: ${{ secrets.EMAIL_PASSWORD }}
+        subject: 'wikip.co Build ${{ job.status }}: ${{ github.event.head_commit.message }}'
+        to: me@anthonyrussano.com
+        from: ${{ secrets.EMAIL_USERNAME }}
+        body: |
+          Repository: ${{ github.repository }}
+          Branch: ${{ github.ref }}
+          Commit: ${{ github.sha }}
+          Status: ${{ job.status }}
+          Workflow: ${{ github.workflow }}
+          Run: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}
