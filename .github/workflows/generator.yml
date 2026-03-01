@@ -58,6 +58,7 @@ jobs:
         git commit -m "workflow publish"
         git push
         cd ..
+        git pull --rebase
         git add .
         git commit -m "workflow deploy"
         git push
