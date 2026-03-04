@@ -6,5 +6,5 @@ image_transform_800: /image/upload/w_800,f_auto/
 image_transform_1024: /image/upload/w_1024,f_auto/
 image_transform_1600: /image/upload/w_1600,f_auto/
 favicon: https://res.cloudinary.com/alchemist-cookbook/image/upload/v1661584179/dark_folder.png
-repo: https://github.com/wikip-co/wikip.co
+repo: https://github.com/wikip-co/content
 branch: main
