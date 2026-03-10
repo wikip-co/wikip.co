@@ -1,10 +1,6 @@
-<% if (page.image) { %>
-    <div style="display: flex; justify-content: center;">
-      <img src="https://res.cloudinary.com/alchemist-cookbook/image/upload/w_200,f_auto/<%- page.image %>" alt="Centered Image" style="border-radius: 10px; box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);">
-    </div>
-  <% } else { %>
-    <div style="display: flex; justify-content: center;">
-      <img src="https://res.cloudinary.com/alchemist-cookbook/image/upload/w_200,f_auto/<%- page.title %>" alt="Centered Image" style="border-radius: 10px; box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);">
-    </div>
-  <% } %>
-  
+<% const imagePublicId = article_image_public_id(page); %>
+<% if (imagePublicId) { %>
+  <div style="display: flex; justify-content: center;">
+    <img src="<%- site.data.resources.cloudinary_url %><%- site.data.resources.image_transform_200 %><%- imagePublicId %>" alt="Centered Image" style="border-radius: 10px; box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);">
+  </div>
+<% } %>

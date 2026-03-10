@@ -14,14 +14,17 @@ on:
     paths:
       - 'site/**'
 
-permissions: write-all
+permissions:
+  contents: read
 
 jobs:
   build:
-    uses: wikip-co/content/.github/workflows/hexo-deploy.yml@main
+    uses: wikip-co/content/.github/workflows/hexo-deploy.yml@4f4feaf66f9f78a3e89aaf06c8578659140fbbe5
     with:
       site_name: wikip.co
       branch: main
+      content_ref: ${{ github.event_name == 'repository_dispatch' && github.event.client_payload.content_ref || 'main' }}
+      content_sha: ${{ github.event_name == 'repository_dispatch' && github.event.client_payload.content_sha || '' }}
       enable_docker: true
       enable_encryption: false
     secrets:

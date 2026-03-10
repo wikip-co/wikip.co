@@ -23,10 +23,9 @@
                 <span style="cursor: pointer;" onclick="myFunction3()"><%= post.title %></span>
             </h1>
             <div style="position: relative; margin: auto;">
-                <% if(page.image) { %>
-                    <img src="<%- site.data.resources.cloudinary_url %><%- site.data.resources.image_transform_200 %><%- page.image %>" style="border-radius: 25px;border-width: 2px;border-style:inset;">
-                <% } else { %>
-                    <img src="<%- site.data.resources.cloudinary_url %><%- site.data.resources.image_transform_200 %><%- page.title %>" style="border-radius: 25px;border-width: 2px;border-style:inset;">
+                <% const imagePublicId = article_image_public_id(page); %>
+                <% if (imagePublicId) { %>
+                    <img src="<%- site.data.resources.cloudinary_url %><%- site.data.resources.image_transform_200 %><%- imagePublicId %>" style="border-radius: 25px;border-width: 2px;border-style:inset;">
                 <% } %>
                 <div style="text-align:justify;">
                     <% if (page.tags && page.tags.length) { %>
