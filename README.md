@@ -31,10 +31,10 @@ A static wiki built with node.js
 
 ## CI/CD Diagram
 
-![wikip.co shared content CI/CD](docs/diagrams/rendered/wikip-content-public-cicd.svg)
+![wikip.co shared content CI/CD](docs/diagrams/rendered/wikip-content-public-cicd.png)
 
 Source spec: [`docs/diagrams/specs/wikip-content-public-cicd.yaml`](docs/diagrams/specs/wikip-content-public-cicd.yaml)
 
-Rendered artifact: [`docs/diagrams/rendered/wikip-content-public-cicd.svg`](docs/diagrams/rendered/wikip-content-public-cicd.svg)
+Rendered artifacts: [`docs/diagrams/rendered/wikip-content-public-cicd.png`](docs/diagrams/rendered/wikip-content-public-cicd.png), [`docs/diagrams/rendered/wikip-content-public-cicd.svg`](docs/diagrams/rendered/wikip-content-public-cicd.svg)
 
 The diagram shows both deploy entrypoints: content pushes in `wikip-co/content` dispatch an exact content SHA into `wikip.co`, and site-only pushes in `wikip.co` trigger the site workflow directly. The `Generate Site` workflow then uses the reusable deploy workflow from `wikip-co/content`, builds Hexo against `site/source/_posts`, and publishes the generated output to `wikip-co/public`.
