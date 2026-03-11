@@ -44,7 +44,7 @@ nodes:
       fontcolor: "#2f6f44"
   - id: validator
     label: "Content validation\nvalidate_content.py"
-    icon: generic.blank
+    icon: onprem.githubactions
     cluster: content
     attrs:
       color: "#2f6f44"
@@ -65,21 +65,21 @@ nodes:
       fontcolor: "#335d8a"
   - id: content_submodule
     label: "site/source/_posts\ncontent submodule"
-    icon: generic.blank
+    icon: onprem.github
     cluster: site
     attrs:
       color: "#335d8a"
       fontcolor: "#335d8a"
   - id: public_submodule
     label: "public\noutput submodule"
-    icon: generic.blank
+    icon: onprem.github
     cluster: site
     attrs:
       color: "#335d8a"
       fontcolor: "#335d8a"
   - id: hexo_build
     label: "npm ci + Hexo build"
-    icon: generic.blank
+    icon: onprem.githubactions
     cluster: site
     attrs:
       color: "#335d8a"
