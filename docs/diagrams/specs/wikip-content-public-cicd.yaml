@@ -1,0 +1,157 @@
+title: Wikip.co Shared Content CI/CD
+direction: LR
+graph_attr:
+  ranksep: "1.1"
+  nodesep: "0.9"
+  pad: "0.5"
+clusters:
+  - id: content
+    label: "wikip-co/content"
+    graph_attr:
+      bgcolor: "#f2f8f2"
+      color: "#7aa874"
+  - id: site
+    label: "wikip-co/wikip.co"
+    graph_attr:
+      bgcolor: "#f4f7fb"
+      color: "#6d8fb3"
+  - id: public
+    label: "wikip-co/public"
+    graph_attr:
+      bgcolor: "#fbf7ef"
+      color: "#b6954d"
+nodes:
+  - id: content_repo
+    label: "Markdown content repo"
+    icon: onprem.github
+    cluster: content
+    attrs:
+      color: "#2f6f44"
+      fontcolor: "#2f6f44"
+  - id: trigger_sites
+    label: "Trigger Site Rebuilds\ntrigger-sites.yml"
+    icon: onprem.githubactions
+    cluster: content
+    attrs:
+      color: "#2f6f44"
+      fontcolor: "#2f6f44"
+  - id: reusable_deploy
+    label: "Reusable deploy workflow\nhexo-deploy.yml"
+    icon: onprem.githubactions
+    cluster: content
+    attrs:
+      color: "#2f6f44"
+      fontcolor: "#2f6f44"
+  - id: validator
+    label: "Content validation\nvalidate_content.py"
+    icon: generic.blank
+    cluster: content
+    attrs:
+      color: "#2f6f44"
+      fontcolor: "#2f6f44"
+  - id: site_repo
+    label: "Site repo\nHexo config, themes, workflows"
+    icon: onprem.github
+    cluster: site
+    attrs:
+      color: "#335d8a"
+      fontcolor: "#335d8a"
+  - id: generator
+    label: "Generate Site\ngenerator.yml"
+    icon: onprem.githubactions
+    cluster: site
+    attrs:
+      color: "#335d8a"
+      fontcolor: "#335d8a"
+  - id: content_submodule
+    label: "site/source/_posts\ncontent submodule"
+    icon: generic.blank
+    cluster: site
+    attrs:
+      color: "#335d8a"
+      fontcolor: "#335d8a"
+  - id: public_submodule
+    label: "public\noutput submodule"
+    icon: generic.blank
+    cluster: site
+    attrs:
+      color: "#335d8a"
+      fontcolor: "#335d8a"
+  - id: hexo_build
+    label: "npm ci + Hexo build"
+    icon: generic.blank
+    cluster: site
+    attrs:
+      color: "#335d8a"
+      fontcolor: "#335d8a"
+  - id: public_repo
+    label: "Published static site repo"
+    icon: onprem.github
+    cluster: public
+    attrs:
+      color: "#8a6b20"
+      fontcolor: "#8a6b20"
+edges:
+  - from: content_repo
+    to: trigger_sites
+    label: "push main\n**/*.md"
+    color: "#2f6f44"
+  - from: content_repo
+    to: content_submodule
+    label: "submodule origin"
+    color: "#2f6f44"
+    style: dashed
+  - from: content_repo
+    to: reusable_deploy
+    label: "workflow source"
+    color: "#2f6f44"
+    style: dashed
+  - from: trigger_sites
+    to: generator
+    label: "repository_dispatch\ncontent_ref + content_sha"
+    color: "#2f6f44"
+    penwidth: "2.0"
+  - from: site_repo
+    to: generator
+    label: "push main\nsite/**"
+    color: "#335d8a"
+  - from: generator
+    to: reusable_deploy
+    label: "uses cross-repo reusable workflow"
+    color: "#335d8a"
+    penwidth: "2.0"
+  - from: reusable_deploy
+    to: validator
+    label: "validate content"
+    color: "#2f6f44"
+  - from: reusable_deploy
+    to: content_submodule
+    label: "checkout exact content SHA"
+    color: "#335d8a"
+  - from: site_repo
+    to: public_submodule
+    label: "git submodule"
+    color: "#335d8a"
+    style: dashed
+  - from: site_repo
+    to: hexo_build
+    label: "site package-lock,\nconfig, theme code"
+    color: "#335d8a"
+  - from: content_submodule
+    to: hexo_build
+    label: "markdown posts"
+    color: "#335d8a"
+  - from: validator
+    to: hexo_build
+    label: "gate"
+    color: "#2f6f44"
+  - from: hexo_build
+    to: public_submodule
+    label: "write generated site"
+    color: "#335d8a"
+    penwidth: "2.0"
+  - from: public_submodule
+    to: public_repo
+    label: "commit + push main"
+    color: "#8a6b20"
+    penwidth: "2.0"
