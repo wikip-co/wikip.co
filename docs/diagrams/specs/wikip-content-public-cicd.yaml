@@ -119,7 +119,7 @@ edges:
     color: "#335d8a"
   - from: reusable_deploy
     to: hexo_build
-    label: "npm ci + build against pinned workflow ref"
+    label: "npm ci + build against content@main workflow"
     color: "#2f6f44"
   - from: site_repo
     to: public_submodule

@@ -4,7 +4,7 @@ A static wiki built with node.js
 - Architecture
   - `site/source/_posts` is the `wikip-co/content` submodule that supplies markdown.
   - `public` is the `wikip-co/public` submodule that stores generated HTML assets.
-  - This repo owns Hexo config, themes, workflow glue, and the reusable-workflow pin used for deploys.
+  - This repo owns Hexo config, themes, workflow glue, and the reusable workflow reference used for deploys.
 
 - URLs
   - Cloudflare:
@@ -27,7 +27,7 @@ A static wiki built with node.js
 - Workflow
   - Site-only changes under `site/**` trigger `.github/workflows/generator.yml` on push to `main`.
   - Markdown changes in `wikip-co/content` trigger `content/.github/workflows/trigger-sites.yml`, which sends a `repository_dispatch` to `wikip.co`.
-  - `generator.yml` calls the reusable `wikip-co/content/.github/workflows/hexo-deploy.yml` workflow and passes the exact `content_ref` and `content_sha` from that dispatch payload.
+  - `generator.yml` calls the reusable `wikip-co/content/.github/workflows/hexo-deploy.yml@main` workflow and passes the exact `content_ref` and `content_sha` from that dispatch payload.
   - The reusable workflow checks out the `content` submodule at that exact SHA, builds Hexo, writes the output into the `public` submodule, and pushes the generated site to `wikip-co/public`.
   - Cloudflare Pages deploys from `wikip-co/public`, so `wikip.co` itself is the build orchestrator, not the final hosting repo.
 
@@ -41,6 +41,6 @@ A static wiki built with node.js
 
 The operator runbook for this flow lives at [`docs/content-publishing-runbook.md`](docs/content-publishing-runbook.md).
 
-## Current Deploy Pin
+## Reusable Workflow Tracking
 
-`wikip.co` deliberately pins the reusable deploy workflow to a specific `wikip-co/content` commit for reproducibility. If deploys start failing in a step that no longer exists on `content/main`, check the `uses:` line in [`.github/workflows/generator.yml`](.github/workflows/generator.yml) first and update the pinned SHA.
+`wikip.co` intentionally tracks `wikip-co/content@main` for the reusable deploy workflow so site deploy behavior stays aligned with the current content-pipeline logic. If deploy behavior changes unexpectedly, check the `uses:` line in [`.github/workflows/generator.yml`](.github/workflows/generator.yml) and then inspect the latest version of `content/.github/workflows/hexo-deploy.yml`.

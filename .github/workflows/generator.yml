@@ -19,7 +19,7 @@ permissions:
 
 jobs:
   build:
-    uses: wikip-co/content/.github/workflows/hexo-deploy.yml@4dcb40e81acb164fadabcde7c9fcb78b193ab69f
+    uses: wikip-co/content/.github/workflows/hexo-deploy.yml@main
     with:
       site_name: wikip.co
       branch: main

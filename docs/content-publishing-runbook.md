@@ -15,7 +15,7 @@ This runbook documents the end-to-end path from research ingestion to the live `
 2. The agent uses `research-tools` to search for an existing target, scrape the source, and prepare or append content.
 3. The agent commits the markdown change in `content` on a branch and opens a PR there.
 4. After the PR merges to `content/main`, `trigger-sites.yml` dispatches a `content-updated` event to `wikip.co`.
-5. `wikip.co/.github/workflows/generator.yml` calls the pinned reusable deploy workflow from `wikip-co/content`.
+5. `wikip.co/.github/workflows/generator.yml` calls the reusable deploy workflow from `wikip-co/content@main`.
 6. The deploy workflow checks out:
    - `site/source/_posts` from `wikip-co/content`
    - `public` from `wikip-co/public`
@@ -76,4 +76,4 @@ The failed `wikip.co` run at `2026-03-17` was using an older pinned reusable wor
 - `Set up Python`
 - `Validate content`
 
-The current `content/main` version of `hexo-deploy.yml` no longer contains that validation step, so the fix is to update the pinned SHA in `wikip.co/.github/workflows/generator.yml`.
+That issue was fixed first by updating the pinned SHA, and then by switching `wikip.co` to track `wikip-co/content@main` so deploy logic stays aligned across the repos.
