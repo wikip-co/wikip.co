@@ -1,5 +1,8 @@
 title: Wikip.co Shared Content CI/CD
 direction: LR
+canvas:
+  width: 1800
+  height: 980
 graph_attr:
   ranksep: "1.1"
   nodesep: "0.9"
@@ -7,24 +10,38 @@ graph_attr:
 clusters:
   - id: content
     label: "wikip-co/content"
+    x: 40
+    y: 80
+    width: 520
+    height: 820
     graph_attr:
       bgcolor: "#f2f8f2"
       color: "#7aa874"
   - id: site
     label: "wikip-co/wikip.co"
+    x: 620
+    y: 80
+    width: 820
+    height: 820
     graph_attr:
       bgcolor: "#f4f7fb"
       color: "#6d8fb3"
   - id: public
     label: "wikip-co/public"
+    x: 1500
+    y: 320
+    width: 240
+    height: 220
     graph_attr:
       bgcolor: "#fbf7ef"
       color: "#b6954d"
 nodes:
   - id: content_repo
-    label: "Markdown content repo"
+    label: "Markdown content\nrepo"
     icon: onprem.github
     cluster: content
+    x: 120
+    y: 180
     attrs:
       color: "#2f6f44"
       fontcolor: "#2f6f44"
@@ -32,6 +49,8 @@ nodes:
     label: "Trigger Site Rebuilds\ntrigger-sites.yml"
     icon: onprem.githubactions
     cluster: content
+    x: 120
+    y: 420
     attrs:
       color: "#2f6f44"
       fontcolor: "#2f6f44"
@@ -39,13 +58,17 @@ nodes:
     label: "Reusable deploy workflow\nhexo-deploy.yml"
     icon: onprem.githubactions
     cluster: content
+    x: 120
+    y: 660
     attrs:
       color: "#2f6f44"
       fontcolor: "#2f6f44"
   - id: site_repo
-    label: "Site repo\nHexo config, themes, workflows"
+    label: "Site repo\nHexo config, themes,\nworkflows"
     icon: onprem.github
     cluster: site
+    x: 720
+    y: 180
     attrs:
       color: "#335d8a"
       fontcolor: "#335d8a"
@@ -53,6 +76,8 @@ nodes:
     label: "Generate Site\ngenerator.yml"
     icon: onprem.githubactions
     cluster: site
+    x: 1030
+    y: 180
     attrs:
       color: "#335d8a"
       fontcolor: "#335d8a"
@@ -60,6 +85,8 @@ nodes:
     label: "site/source/_posts\ncontent submodule"
     icon: onprem.github
     cluster: site
+    x: 720
+    y: 480
     attrs:
       color: "#335d8a"
       fontcolor: "#335d8a"
@@ -67,6 +94,8 @@ nodes:
     label: "public\noutput submodule"
     icon: onprem.github
     cluster: site
+    x: 1340
+    y: 480
     attrs:
       color: "#335d8a"
       fontcolor: "#335d8a"
@@ -74,13 +103,17 @@ nodes:
     label: "npm ci + Hexo build"
     icon: onprem.githubactions
     cluster: site
+    x: 1030
+    y: 480
     attrs:
       color: "#335d8a"
       fontcolor: "#335d8a"
   - id: public_repo
-    label: "Published static site repo"
+    label: "Published static\nsite repo"
     icon: onprem.github
     cluster: public
+    x: 1570
+    y: 370
     attrs:
       color: "#8a6b20"
       fontcolor: "#8a6b20"
@@ -88,59 +121,85 @@ edges:
   - from: content_repo
     to: trigger_sites
     label: "push main\n**/*.md"
+    label_x: 200
+    label_y: 330
     color: "#2f6f44"
   - from: content_repo
     to: content_submodule
     label: "submodule origin"
+    label_x: 450
+    label_y: 330
     color: "#2f6f44"
     style: dashed
   - from: content_repo
     to: reusable_deploy
     label: "workflow source"
+    label_x: 430
+    label_y: 640
     color: "#2f6f44"
     style: dashed
   - from: trigger_sites
     to: generator
     label: "repository_dispatch\ncontent_ref + content_sha"
+    label_x: 650
+    label_y: 330
     color: "#2f6f44"
     penwidth: "2.0"
   - from: site_repo
     to: generator
     label: "push main\nsite/**"
+    label_x: 880
+    label_y: 150
     color: "#335d8a"
   - from: generator
     to: reusable_deploy
     label: "uses cross-repo reusable workflow"
+    label_x: 760
+    label_y: 520
     color: "#335d8a"
     penwidth: "2.0"
   - from: reusable_deploy
     to: content_submodule
     label: "checkout exact content SHA"
+    label_x: 620
+    label_y: 710
     color: "#335d8a"
   - from: reusable_deploy
     to: hexo_build
     label: "npm ci + build against content@main workflow"
+    label_x: 845
+    label_y: 560
     color: "#2f6f44"
   - from: site_repo
     to: public_submodule
     label: "git submodule"
+    label_x: 1180
+    label_y: 330
     color: "#335d8a"
     style: dashed
   - from: site_repo
     to: hexo_build
     label: "site package-lock,\nconfig, theme code"
+    label_x: 870
+    label_y: 330
     color: "#335d8a"
   - from: content_submodule
     to: hexo_build
     label: "markdown posts"
+    label_x: 875
+    label_y: 450
     color: "#335d8a"
   - from: hexo_build
     to: public_submodule
     label: "write generated site"
+    label_x: 1180
+    label_y: 450
     color: "#335d8a"
     penwidth: "2.0"
   - from: public_submodule
     to: public_repo
     label: "commit + push main"
+    label_x: 1490
+    label_y: 450
     color: "#8a6b20"
     penwidth: "2.0"

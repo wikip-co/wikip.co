@@ -6,3 +6,5 @@ node_modules/
 .deploy*/
 _multiconfig.yml
 projects.json
+__pycache__/
+*.pyc
