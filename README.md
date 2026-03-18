@@ -2,9 +2,9 @@
 A static wiki built with node.js
 
 - Architecture
-  - `site/source/_posts` is the shared `wikip-co/content` submodule.
-  - `public` is the generated static-site submodule published separately.
-  - The site repo owns Hexo config, themes, workflow glue, and deploy behavior.
+  - `site/source/_posts` is the `wikip-co/content` submodule that supplies markdown.
+  - `public` is the `wikip-co/public` submodule that stores generated HTML assets.
+  - This repo owns Hexo config, themes, workflow glue, and the reusable-workflow pin used for deploys.
 
 - URLs
   - Cloudflare:
@@ -22,19 +22,25 @@ A static wiki built with node.js
 - Local setup
   - `git submodule update --init --recursive`
   - `npm ci --prefix site`
-  - `npm --prefix site run build`
+  - `NODE_OPTIONS=--max-old-space-size=5168 npm --prefix site run build`
 
 - Workflow
-  - Site-only changes under `site/**` build on push.
-  - Content changes arrive through `repository_dispatch` from `wikip-co/content`.
-  - The deploy workflow builds against the exact content SHA provided in that dispatch payload.
+  - Site-only changes under `site/**` trigger `.github/workflows/generator.yml` on push to `main`.
+  - Markdown changes in `wikip-co/content` trigger `content/.github/workflows/trigger-sites.yml`, which sends a `repository_dispatch` to `wikip.co`.
+  - `generator.yml` calls the reusable `wikip-co/content/.github/workflows/hexo-deploy.yml` workflow and passes the exact `content_ref` and `content_sha` from that dispatch payload.
+  - The reusable workflow checks out the `content` submodule at that exact SHA, builds Hexo, writes the output into the `public` submodule, and pushes the generated site to `wikip-co/public`.
+  - Cloudflare Pages deploys from `wikip-co/public`, so `wikip.co` itself is the build orchestrator, not the final hosting repo.
 
-## CI/CD Diagram
+## Publishing Flow
 
-![wikip.co shared content CI/CD](docs/diagrams/rendered/wikip-content-public-cicd.png)
+1. An agent or human edits markdown in `wikip-co/content`.
+2. Those changes land on `content/main` through a normal commit or merged PR.
+3. `content` dispatches a rebuild event to `wikip.co` with the exact markdown commit SHA.
+4. `wikip.co` builds against that SHA and pushes generated HTML to `wikip-co/public`.
+5. Cloudflare Pages publishes from `wikip-co/public`.
 
-Source spec: [`docs/diagrams/specs/wikip-content-public-cicd.yaml`](docs/diagrams/specs/wikip-content-public-cicd.yaml)
+The operator runbook for this flow lives at [`docs/content-publishing-runbook.md`](docs/content-publishing-runbook.md).
 
-Rendered artifacts: [`docs/diagrams/rendered/wikip-content-public-cicd.png`](docs/diagrams/rendered/wikip-content-public-cicd.png), [`docs/diagrams/rendered/wikip-content-public-cicd.svg`](docs/diagrams/rendered/wikip-content-public-cicd.svg)
+## Current Deploy Pin
 
-The diagram shows both deploy entrypoints: content pushes in `wikip-co/content` dispatch an exact content SHA into `wikip.co`, and site-only pushes in `wikip.co` trigger the site workflow directly. The `Generate Site` workflow then uses the reusable deploy workflow from `wikip-co/content`, builds Hexo against `site/source/_posts`, and publishes the generated output to `wikip-co/public`.
+`wikip.co` deliberately pins the reusable deploy workflow to a specific `wikip-co/content` commit for reproducibility. If deploys start failing in a step that no longer exists on `content/main`, check the `uses:` line in [`.github/workflows/generator.yml`](.github/workflows/generator.yml) first and update the pinned SHA.

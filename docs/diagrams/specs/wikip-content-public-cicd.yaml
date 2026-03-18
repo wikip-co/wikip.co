@@ -42,13 +42,6 @@ nodes:
     attrs:
       color: "#2f6f44"
       fontcolor: "#2f6f44"
-  - id: validator
-    label: "Content validation\nvalidate_content.py"
-    icon: onprem.githubactions
-    cluster: content
-    attrs:
-      color: "#2f6f44"
-      fontcolor: "#2f6f44"
   - id: site_repo
     label: "Site repo\nHexo config, themes, workflows"
     icon: onprem.github
@@ -121,13 +114,13 @@ edges:
     color: "#335d8a"
     penwidth: "2.0"
   - from: reusable_deploy
-    to: validator
-    label: "validate content"
-    color: "#2f6f44"
-  - from: reusable_deploy
     to: content_submodule
     label: "checkout exact content SHA"
     color: "#335d8a"
+  - from: reusable_deploy
+    to: hexo_build
+    label: "npm ci + build against pinned workflow ref"
+    color: "#2f6f44"
   - from: site_repo
     to: public_submodule
     label: "git submodule"
@@ -141,10 +134,6 @@ edges:
     to: hexo_build
     label: "markdown posts"
     color: "#335d8a"
-  - from: validator
-    to: hexo_build
-    label: "gate"
-    color: "#2f6f44"
   - from: hexo_build
     to: public_submodule
     label: "write generated site"
