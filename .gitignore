@@ -8,3 +8,9 @@ _multiconfig.yml
 projects.json
 __pycache__/
 *.pyc
+
+# Fetched build inputs and generated output. These are populated by
+# scripts/prepare-content and GitHub Actions, never tracked by this repo.
+/.build/
+/public/
+/site/source/_posts/

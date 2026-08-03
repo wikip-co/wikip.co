@@ -1,46 +1,54 @@
 # wikip.co
-A static wiki built with node.js
 
-- Architecture
-  - `site/source/_posts` is the `wikip-co/content` submodule that supplies markdown.
-  - `public` is the `wikip-co/public` submodule that stores generated HTML assets.
-  - This repo owns Hexo config, themes, workflow glue, and the reusable workflow reference used for deploys.
+A static wiki built with Node.js and Hexo.
 
-- URLs
-  - Cloudflare:
-    - https://wikip.co/
-    - https://www.wikip.co/
-    - https://public-kb6.pages.dev/
-  - Fleek.co
-    - https://ipfs.wikip.co/
-    - https://wikip.on.fleek.co/
+## Architecture
 
-- Docker
-  - https://hub.docker.com/r/anthonyrussano/wikip.co
-  - `docker run -p 4000:4000 anthonyrussano/wikip.co`
+- `wikip-co/content` is the markdown source of truth.
+- `wikip-co/wikip.co` owns Hexo configuration, themes, local build helpers, and deployment orchestration.
+- `wikip-co/public` stores generated HTML for Cloudflare Pages.
 
-- Local setup
-  - `git submodule update --init --recursive`
-  - `npm ci --prefix site`
-  - `NODE_OPTIONS=--max-old-space-size=5168 npm --prefix site run build`
+The repositories are independent. There are no Git submodules in this repo. Content is copied into the ignored `site/source/_posts` directory for a build, and Hexo writes generated output into the ignored `public` directory.
 
-- Workflow
-  - Site-only changes under `site/**` trigger `.github/workflows/generator.yml` on push to `main`.
-  - Markdown changes in `wikip-co/content` trigger `content/.github/workflows/trigger-sites.yml`, which sends a `repository_dispatch` to `wikip.co`.
-  - `generator.yml` calls the reusable `wikip-co/content/.github/workflows/hexo-deploy.yml@main` workflow and passes the exact `content_ref` and `content_sha` from that dispatch payload.
-  - The reusable workflow checks out the `content` submodule at that exact SHA, builds Hexo, writes the output into the `public` submodule, and pushes the generated site to `wikip-co/public`.
-  - Cloudflare Pages deploys from `wikip-co/public`, so `wikip.co` itself is the build orchestrator, not the final hosting repo.
+## Local build
 
-## Publishing Flow
+With `content` and `wikip.co` checked out as siblings:
 
-1. An agent or human edits markdown in `wikip-co/content`.
-2. Those changes land on `content/main` through a normal commit or merged PR.
-3. `content` dispatches a rebuild event to `wikip.co` with the exact markdown commit SHA.
-4. `wikip.co` builds against that SHA and pushes generated HTML to `wikip-co/public`.
-5. Cloudflare Pages publishes from `wikip-co/public`.
+```bash
+./scripts/build-site
+```
 
-The operator runbook for this flow lives at [`docs/content-publishing-runbook.md`](docs/content-publishing-runbook.md).
+The helper uses `../content`, applies `site-content-excludes.txt`, installs the locked Node dependencies, restores markdown modification times from content history, and builds the site. To use another checkout:
 
-## Reusable Workflow Tracking
+```bash
+CONTENT_REPO_ROOT=/path/to/content ./scripts/build-site
+```
 
-`wikip.co` intentionally tracks `wikip-co/content@main` for the reusable deploy workflow so site deploy behavior stays aligned with the current content-pipeline logic. If deploy behavior changes unexpectedly, check the `uses:` line in [`.github/workflows/generator.yml`](.github/workflows/generator.yml) and then inspect the latest version of `content/.github/workflows/hexo-deploy.yml`.
+If there is no sibling checkout and `CONTENT_REPO_ROOT` is unset, `scripts/prepare-content` fetches `wikip-co/content` into the ignored `.build/content-repo` directory. Set `CONTENT_REF` to build another branch, tag, or commit.
+
+## Deployment
+
+1. A markdown change merged to `content/main` triggers `content/.github/workflows/trigger-sites.yml`.
+2. The content workflow dispatches `content_ref` and the exact `content_sha` to this repository.
+3. `.github/workflows/generator.yml` checks out that content revision and `wikip-co/public` into ignored build directories.
+4. The workflow prepares a plain `_posts` tree, restores markdown mtimes, and builds Hexo.
+5. Generated output is synchronized into the temporary `public` checkout, committed, and pushed.
+6. Cloudflare Pages publishes `wikip-co/public`; the workflow also publishes the Docker image.
+
+Site-only changes under `site/**`, build-helper changes under `scripts/**`, Dockerfile changes, and workflow changes trigger the same build directly.
+
+## URLs
+
+- https://wikip.co/
+- https://www.wikip.co/
+- https://public-kb6.pages.dev/
+- https://ipfs.wikip.co/
+- https://wikip.on.fleek.co/
+
+Docker image: `anthonyrussano/wikip.co`
+
+```bash
+docker run -p 4000:4000 anthonyrussano/wikip.co
+```
+
+The cross-repository operator runbook is centralized in [`wikip-co/Research`](https://github.com/wikip-co/Research/blob/main/docs/content-publishing-runbook.md).
