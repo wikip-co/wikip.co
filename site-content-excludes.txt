@@ -1,0 +1,3 @@
+# Repository documentation must not be parsed as Hexo posts. This entry also
+# keeps the cross-repository rollout safe while the guide moves to Research.
+Natural Healing/STYLE-GUIDE.md

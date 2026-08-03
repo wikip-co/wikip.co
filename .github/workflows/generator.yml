@@ -12,6 +12,10 @@ on:
     branches:
       - main
     paths:
+      - '.github/workflows/generator.yml'
+      - 'Dockerfile'
+      - 'scripts/**'
+      - 'site-content-excludes.txt'
       - 'site/**'
 
 permissions:
@@ -19,19 +23,93 @@ permissions:
 
 jobs:
   build:
-    uses: wikip-co/content/.github/workflows/hexo-deploy.yml@main
-    with:
-      site_name: wikip.co
-      branch: main
-      content_ref: ${{ github.event_name == 'repository_dispatch' && github.event.client_payload.content_ref || 'main' }}
-      content_sha: ${{ github.event_name == 'repository_dispatch' && github.event.client_payload.content_sha || '' }}
-      enable_docker: true
-      enable_encryption: false
-    secrets:
-      GIT_TOKEN: ${{ secrets.GIT_ACCESS_TOKEN }}
-      EMAIL_USERNAME: ${{ secrets.EMAIL_USERNAME }}
-      EMAIL_PASSWORD: ${{ secrets.EMAIL_PASSWORD }}
-      EMAIL_SMTP_SERVER: ${{ secrets.EMAIL_SMTP_SERVER }}
-      EMAIL_SMTP_PORT: ${{ secrets.EMAIL_SMTP_PORT }}
-      DOCKER_USERNAME: ${{ secrets.DOCKER_USERNAME }}
-      DOCKER_PASSWORD: ${{ secrets.DOCKER_PASSWORD }}
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out site
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 1
+          submodules: false
+
+      - name: Check out content
+        uses: actions/checkout@v4
+        with:
+          repository: wikip-co/content
+          ref: ${{ github.event_name == 'repository_dispatch' && github.event.client_payload.content_sha || 'main' }}
+          path: .build/content-repo
+          fetch-depth: 0
+          token: ${{ secrets.GIT_ACCESS_TOKEN }}
+
+      - name: Check out published site
+        uses: actions/checkout@v4
+        with:
+          repository: wikip-co/public
+          ref: main
+          path: .build/public-repo
+          fetch-depth: 1
+          token: ${{ secrets.GIT_ACCESS_TOKEN }}
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: npm
+          cache-dependency-path: site/package-lock.json
+
+      - name: Prepare content
+        env:
+          CONTENT_REPO_ROOT: .build/content-repo
+        run: ./scripts/prepare-content
+
+      - name: Install site dependencies
+        run: npm ci --prefix site
+
+      - name: Build site
+        env:
+          NODE_OPTIONS: --max-old-space-size=5168
+        run: |
+          npm --prefix site run clean
+          npm --prefix site run build
+
+      - name: Publish generated site
+        run: |
+          rsync -a --delete --exclude='.git/' public/ .build/public-repo/
+          git -C .build/public-repo config user.email "me@anthonyrussano.com"
+          git -C .build/public-repo config user.name "Anthony Russano"
+          git -C .build/public-repo add --all
+          if git -C .build/public-repo diff --cached --quiet; then
+            echo "No public changes to publish."
+            exit 0
+          fi
+          git -C .build/public-repo commit -m "workflow publish: ${GITHUB_SHA}"
+          git -C .build/public-repo push origin main
+
+      - name: Prepare Docker image
+        id: prep
+        env:
+          DOCKER_USERNAME: ${{ secrets.DOCKER_USERNAME }}
+        run: |
+          docker_image="${DOCKER_USERNAME}/${GITHUB_REPOSITORY#*/}"
+          echo "tags=${docker_image}:latest" >> "$GITHUB_OUTPUT"
+
+      - name: Set up QEMU
+        uses: docker/setup-qemu-action@v3
+        with:
+          platforms: all
+
+      - name: Set up Docker Buildx
+        uses: docker/setup-buildx-action@v3
+
+      - name: Log in to Docker Hub
+        uses: docker/login-action@v3
+        with:
+          username: ${{ secrets.DOCKER_USERNAME }}
+          password: ${{ secrets.DOCKER_PASSWORD }}
+
+      - name: Build and push Docker image
+        uses: docker/build-push-action@v6
+        with:
+          context: .
+          file: ./Dockerfile
+          platforms: linux/amd64,linux/arm64
+          push: true
+          tags: ${{ steps.prep.outputs.tags }}

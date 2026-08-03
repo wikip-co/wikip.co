@@ -1,0 +1,31 @@
+name: Validate Repository Boundaries
+
+on:
+  push:
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          submodules: false
+
+      - name: Reject nested repository state
+        run: |
+          if git ls-files --stage | awk '$1 == "160000" { found = 1 } END { exit !found }'; then
+            echo "Gitlinks are not allowed; dependencies must be fetched at build time."
+            exit 1
+          fi
+          if git ls-files | grep -qE '(^|/)\.gitmodules$'; then
+            echo ".gitmodules files are not allowed."
+            exit 1
+          fi
+          if test -n "$(git ls-files public site/source/_posts)"; then
+            echo "public and site/source/_posts must remain untracked build directories."
+            exit 1
+          fi

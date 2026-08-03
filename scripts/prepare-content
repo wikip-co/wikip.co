@@ -1,0 +1,68 @@
+#!/usr/bin/env bash
+set -euo pipefail
+
+site_root="$(cd -- "$(dirname -- "${BASH_SOURCE[0]}")/.." && pwd)"
+destination="${site_root}/site/source/_posts"
+managed_checkout="${site_root}/.build/content-repo"
+content_ref="${CONTENT_REF:-main}"
+exclude_file="${site_root}/site-content-excludes.txt"
+
+if [[ -n "${CONTENT_REPO_ROOT:-}" && ! -d "$CONTENT_REPO_ROOT" ]]; then
+  printf 'CONTENT_REPO_ROOT does not exist: %s\n' "$CONTENT_REPO_ROOT" >&2
+  exit 1
+fi
+
+if [[ -n "${CONTENT_REPO_ROOT:-}" ]]; then
+  source_repo="$(cd -- "$CONTENT_REPO_ROOT" && pwd)"
+elif git -C "${site_root}/../content" rev-parse --is-inside-work-tree >/dev/null 2>&1; then
+  source_repo="$(cd -- "${site_root}/../content" && pwd)"
+else
+  source_repo="$managed_checkout"
+fi
+
+if [[ "$source_repo" == "$managed_checkout" ]]; then
+  if [[ ! -e "$source_repo" ]]; then
+    mkdir -p "$(dirname -- "$source_repo")"
+    git clone --branch main https://github.com/wikip-co/content.git "$source_repo"
+  elif ! git -C "$source_repo" rev-parse --is-inside-work-tree >/dev/null 2>&1; then
+    printf 'Managed content path is not a Git repository: %s\n' "$source_repo" >&2
+    exit 1
+  fi
+
+  if [[ -n "$(git -C "$source_repo" status --porcelain)" ]]; then
+    printf 'Managed content checkout has local changes; refusing to overwrite them: %s\n' "$source_repo" >&2
+    exit 1
+  fi
+
+  git -C "$source_repo" fetch --prune origin "$content_ref"
+  git -C "$source_repo" checkout --detach FETCH_HEAD
+elif ! git -C "$source_repo" rev-parse --is-inside-work-tree >/dev/null 2>&1; then
+  printf 'CONTENT_REPO_ROOT is not a Git working tree: %s\n' "$source_repo" >&2
+  exit 1
+fi
+
+if [[ "$source_repo" == "$destination" ]]; then
+  printf 'Content source and prepared destination must be different paths.\n' >&2
+  exit 1
+fi
+
+if [[ -e "$destination/.git" ]]; then
+  printf 'Refusing to replace nested Git checkout at %s\n' "$destination" >&2
+  printf 'Detach the legacy submodule layout before building (from Research: ./workspace migrate).\n' >&2
+  exit 1
+fi
+
+mkdir -p "$destination"
+rsync -a --delete --delete-excluded --exclude='.git' --exclude-from="$exclude_file" \
+  "${source_repo}/" "${destination}/"
+
+git -C "$source_repo" ls-files -z -- '*.md' |
+  while IFS= read -r -d '' file; do
+    timestamp="$(git -C "$source_repo" log -1 --format=%ct -- "$file")"
+    if [[ -n "$timestamp" && -f "$destination/$file" ]]; then
+      touch -d "@${timestamp}" "$destination/$file"
+    fi
+  done
+
+printf 'Prepared content from %s at %s\n' \
+  "$source_repo" "$(git -C "$source_repo" rev-parse --short HEAD)"

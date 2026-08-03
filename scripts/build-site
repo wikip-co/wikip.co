@@ -1,0 +1,19 @@
+#!/usr/bin/env bash
+set -euo pipefail
+
+site_root="$(cd -- "$(dirname -- "${BASH_SOURCE[0]}")/.." && pwd)"
+
+if [[ -e "${site_root}/public/.git" ]]; then
+  printf 'Refusing to build over nested Git checkout at %s/public\n' "$site_root" >&2
+  printf 'Detach the legacy submodule layout before building (from Research: ./workspace migrate).\n' >&2
+  exit 1
+fi
+
+"${site_root}/scripts/prepare-content"
+npm ci --prefix "${site_root}/site"
+NODE_OPTIONS="${NODE_OPTIONS:---max-old-space-size=5168}" \
+  npm --prefix "${site_root}/site" run clean
+NODE_OPTIONS="${NODE_OPTIONS:---max-old-space-size=5168}" \
+  npm --prefix "${site_root}/site" run build
+
+printf 'Generated site: %s/public\n' "$site_root"
