@@ -10,6 +10,12 @@ A static wiki built with Node.js and Hexo.
 
 The repositories are independent. There are no Git submodules in this repo. Content is copied into the ignored `site/source/_posts` directory for a build, and Hexo writes generated output into the ignored `public` directory.
 
+The upstream Research local-model publisher operates only in the `content`
+repository: it prepares an isolated Markdown patch and optional draft PR, then
+requires human review and merge. It does not invoke Hexo directly, edit this
+repository, write generated output, or auto-merge. The normal exact-SHA flow
+below begins only after `content/main` changes.
+
 ## Local build
 
 With `content` and `wikip.co` checked out as siblings:
@@ -51,4 +57,4 @@ Docker image: `anthonyrussano/wikip.co`
 docker run -p 4000:4000 anthonyrussano/wikip.co
 ```
 
-The cross-repository operator runbook is centralized in [`wikip-co/Research`](https://github.com/wikip-co/Research/blob/main/docs/content-publishing-runbook.md).
+The cross-repository [production operations](https://github.com/wikip-co/Research/blob/main/docs/research-production-operations.md) and [content publishing runbook](https://github.com/wikip-co/Research/blob/main/docs/content-publishing-runbook.md) are centralized in `wikip-co/Research`.
