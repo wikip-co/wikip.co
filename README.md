@@ -57,4 +57,4 @@ Docker image: `anthonyrussano/wikip.co`
 docker run -p 4000:4000 anthonyrussano/wikip.co
 ```
 
-The cross-repository [production operations](https://github.com/wikip-co/Research/blob/main/docs/research-production-operations.md) and [content publishing runbook](https://github.com/wikip-co/Research/blob/main/docs/content-publishing-runbook.md) are centralized in `wikip-co/Research`.
+The cross-repository [production operations](https://agent.wikip.co/research-production-operations/) and [content publishing runbook](https://agent.wikip.co/research-content-publishing-runbook/) are maintained in the canonical Agent Wiki. See the [Research Documentation Index](https://agent.wikip.co/research-documentation-index/) for the complete collection.
